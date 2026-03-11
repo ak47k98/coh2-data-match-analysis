@@ -1,0 +1,4822 @@
+[
+  {
+    "skipped": false,
+    "mode": "1v1",
+    "race_id": 0,
+    "metrics": {
+      "n_samples": 751,
+      "pos_rate": 0.5299600532623169,
+      "lr_acc": 0.9403973509933775,
+      "lr_f1": 0.9433962264150944,
+      "lr_auc": 0.9945422535211268,
+      "rf_acc": 0.9403973509933775,
+      "rf_f1": 0.9447852760736196,
+      "rf_auc": 0.9913732394366197,
+      "lr_confusion_matrix": [
+        [
+          67,
+          4
+        ],
+        [
+          5,
+          75
+        ]
+      ],
+      "rf_confusion_matrix": [
+        [
+          65,
+          6
+        ],
+        [
+          3,
+          77
+        ]
+      ],
+      "lr_report": {
+        "0": {
+          "precision": 0.9305555555555556,
+          "recall": 0.9436619718309859,
+          "f1-score": 0.9370629370629371,
+          "support": 71.0
+        },
+        "1": {
+          "precision": 0.9493670886075949,
+          "recall": 0.9375,
+          "f1-score": 0.9433962264150944,
+          "support": 80.0
+        },
+        "accuracy": 0.9403973509933775,
+        "macro avg": {
+          "precision": 0.9399613220815752,
+          "recall": 0.940580985915493,
+          "f1-score": 0.9402295817390157,
+          "support": 151.0
+        },
+        "weighted avg": {
+          "precision": 0.9405219306824638,
+          "recall": 0.9403973509933775,
+          "f1-score": 0.9404183221501726,
+          "support": 151.0
+        }
+      },
+      "rf_report": {
+        "0": {
+          "precision": 0.9558823529411765,
+          "recall": 0.9154929577464789,
+          "f1-score": 0.935251798561151,
+          "support": 71.0
+        },
+        "1": {
+          "precision": 0.927710843373494,
+          "recall": 0.9625,
+          "f1-score": 0.9447852760736196,
+          "support": 80.0
+        },
+        "accuracy": 0.9403973509933775,
+        "macro avg": {
+          "precision": 0.9417965981573353,
+          "recall": 0.9389964788732394,
+          "f1-score": 0.9400185373173853,
+          "support": 151.0
+        },
+        "weighted avg": {
+          "precision": 0.9409570498589606,
+          "recall": 0.9403973509933775,
+          "f1-score": 0.9403026475743794,
+          "support": 151.0
+        }
+      }
+    },
+    "logistic": {
+      "intercept": 0.3886069512846399,
+      "top5": [
+        {
+          "feature": "sqkilled_per_min",
+          "coef": 1.9331540649271046
+        },
+        {
+          "feature": "squad_net_ratio",
+          "coef": 1.3328258203749366
+        },
+        {
+          "feature": "sqlost_per_min",
+          "coef": -1.3015626216462979
+        },
+        {
+          "feature": "squad_loss_ratio",
+          "coef": -1.2921851262363058
+        },
+        {
+          "feature": "fuelearn_per_min",
+          "coef": 1.067552937367969
+        }
+      ],
+      "coef_table": [
+        {
+          "feature": "sqkilled_per_min",
+          "coef": 1.9331540649271046
+        },
+        {
+          "feature": "squad_net_ratio",
+          "coef": 1.3328258203749366
+        },
+        {
+          "feature": "sqlost_per_min",
+          "coef": -1.3015626216462979
+        },
+        {
+          "feature": "squad_loss_ratio",
+          "coef": -1.2921851262363058
+        },
+        {
+          "feature": "fuelearn_per_min",
+          "coef": 1.067552937367969
+        },
+        {
+          "feature": "svetrank",
+          "coef": -0.9511250069173587
+        },
+        {
+          "feature": "vkill_per_min",
+          "coef": 0.9089126476991288
+        },
+        {
+          "feature": "man_spend_ratio",
+          "coef": 0.7512863206122407
+        },
+        {
+          "feature": "dmg_per_min",
+          "coef": 0.7015705797970172
+        },
+        {
+          "feature": "dmg_per_death",
+          "coef": 0.6991578800685756
+        },
+        {
+          "feature": "man_float_ratio",
+          "coef": 0.6839963939094967
+        },
+        {
+          "feature": "dmg_per_man",
+          "coef": 0.675661609419316
+        },
+        {
+          "feature": "kills_per_man",
+          "coef": 0.6635901432044028
+        },
+        {
+          "feature": "cap_eff",
+          "coef": 0.6287421547407246
+        },
+        {
+          "feature": "upg",
+          "coef": 0.5277637759553436
+        },
+        {
+          "feature": "plost_per_min",
+          "coef": -0.41379284103130765
+        },
+        {
+          "feature": "blost",
+          "coef": -0.4005209566795454
+        },
+        {
+          "feature": "mun_spend_ratio",
+          "coef": 0.38434750670206497
+        },
+        {
+          "feature": "ekills_per_min",
+          "coef": 0.359918249634934
+        },
+        {
+          "feature": "pcap_per_min",
+          "coef": 0.35950595475307706
+        },
+        {
+          "feature": "trade_eff_kd",
+          "coef": 0.3215305326235404
+        },
+        {
+          "feature": "mun_float_ratio",
+          "coef": -0.26556771197539625
+        },
+        {
+          "feature": "cabil",
+          "coef": 0.24871775205771293
+        },
+        {
+          "feature": "sqprod_per_min",
+          "coef": 0.2179455008890122
+        },
+        {
+          "feature": "dmg_per_fuel",
+          "coef": 0.1906747076933385
+        },
+        {
+          "feature": "manearn_per_min",
+          "coef": -0.18148567349323091
+        },
+        {
+          "feature": "dmg_per_kill",
+          "coef": -0.17109292846922716
+        },
+        {
+          "feature": "fuel_float_ratio",
+          "coef": 0.1651601686270747
+        },
+        {
+          "feature": "munearn_per_min",
+          "coef": 0.12064956364615756
+        },
+        {
+          "feature": "svetxp_per_min",
+          "coef": 0.08393322132246821
+        },
+        {
+          "feature": "gt_min",
+          "coef": 0.06647504150945537
+        },
+        {
+          "feature": "fuel_spend_ratio",
+          "coef": 0.06282756106030839
+        },
+        {
+          "feature": "edeaths_per_min",
+          "coef": 0.062082401326875404
+        },
+        {
+          "feature": "vkill_per_fuel",
+          "coef": -0.06143821888374158
+        },
+        {
+          "feature": "vlost_per_min",
+          "coef": 0.054546253165183814
+        },
+        {
+          "feature": "vvetxp_per_min",
+          "coef": -0.033271749805162384
+        },
+        {
+          "feature": "cap_pressure_per_min",
+          "coef": 0.029875624124331073
+        },
+        {
+          "feature": "bprod",
+          "coef": -0.02588462717835319
+        },
+        {
+          "feature": "vloss_per_fuel",
+          "coef": 0.02049847867383875
+        },
+        {
+          "feature": "vvetrank",
+          "coef": 0.013831543560778075
+        },
+        {
+          "feature": "abil",
+          "coef": 0.009818256255821648
+        },
+        {
+          "feature": "utypes",
+          "coef": -0.0032322059552737908
+        }
+      ]
+    },
+    "random_forest": {
+      "top5": [
+        {
+          "feature": "trade_eff_kd",
+          "importance": 0.15224759792326542
+        },
+        {
+          "feature": "sqkilled_per_min",
+          "importance": 0.09883178322796995
+        },
+        {
+          "feature": "sqlost_per_min",
+          "importance": 0.09657226522315972
+        },
+        {
+          "feature": "dmg_per_death",
+          "importance": 0.05592883890808878
+        },
+        {
+          "feature": "squad_net_ratio",
+          "importance": 0.05523643236099709
+        }
+      ],
+      "importance_table": [
+        {
+          "feature": "trade_eff_kd",
+          "importance": 0.15224759792326542
+        },
+        {
+          "feature": "sqkilled_per_min",
+          "importance": 0.09883178322796995
+        },
+        {
+          "feature": "sqlost_per_min",
+          "importance": 0.09657226522315972
+        },
+        {
+          "feature": "dmg_per_death",
+          "importance": 0.05592883890808878
+        },
+        {
+          "feature": "squad_net_ratio",
+          "importance": 0.05523643236099709
+        },
+        {
+          "feature": "cap_eff",
+          "importance": 0.053920297203271315
+        },
+        {
+          "feature": "ekills_per_min",
+          "importance": 0.052847020180959964
+        },
+        {
+          "feature": "squad_loss_ratio",
+          "importance": 0.04514728566855823
+        },
+        {
+          "feature": "fuelearn_per_min",
+          "importance": 0.043766847934505915
+        },
+        {
+          "feature": "kills_per_man",
+          "importance": 0.04004547380862077
+        },
+        {
+          "feature": "vloss_per_fuel",
+          "importance": 0.03748285513418713
+        },
+        {
+          "feature": "edeaths_per_min",
+          "importance": 0.03407033180145769
+        },
+        {
+          "feature": "munearn_per_min",
+          "importance": 0.0328756334950457
+        },
+        {
+          "feature": "vkill_per_min",
+          "importance": 0.016942417705840294
+        },
+        {
+          "feature": "vlost_per_min",
+          "importance": 0.016828804586672557
+        },
+        {
+          "feature": "vkill_per_fuel",
+          "importance": 0.016331862351197945
+        },
+        {
+          "feature": "pcap_per_min",
+          "importance": 0.012120455575728994
+        },
+        {
+          "feature": "dmg_per_min",
+          "importance": 0.01110381620162416
+        },
+        {
+          "feature": "dmg_per_kill",
+          "importance": 0.010732022598639026
+        },
+        {
+          "feature": "dmg_per_man",
+          "importance": 0.007733963211146261
+        },
+        {
+          "feature": "sqprod_per_min",
+          "importance": 0.007483758488455873
+        },
+        {
+          "feature": "man_float_ratio",
+          "importance": 0.0066861175334689705
+        },
+        {
+          "feature": "mun_float_ratio",
+          "importance": 0.006556557401347703
+        },
+        {
+          "feature": "fuel_float_ratio",
+          "importance": 0.006465907607718302
+        },
+        {
+          "feature": "gt_min",
+          "importance": 0.006082648324945328
+        },
+        {
+          "feature": "manearn_per_min",
+          "importance": 0.006024526274912979
+        },
+        {
+          "feature": "man_spend_ratio",
+          "importance": 0.006017908974781285
+        },
+        {
+          "feature": "mun_spend_ratio",
+          "importance": 0.005956902609321055
+        },
+        {
+          "feature": "cap_pressure_per_min",
+          "importance": 0.005852371169874133
+        },
+        {
+          "feature": "plost_per_min",
+          "importance": 0.0056777310110513535
+        },
+        {
+          "feature": "dmg_per_fuel",
+          "importance": 0.005562321551731411
+        },
+        {
+          "feature": "cabil",
+          "importance": 0.0052093576254498754
+        },
+        {
+          "feature": "abil",
+          "importance": 0.004927741076018101
+        },
+        {
+          "feature": "vvetxp_per_min",
+          "importance": 0.004428578866821216
+        },
+        {
+          "feature": "fuel_spend_ratio",
+          "importance": 0.004313451354960266
+        },
+        {
+          "feature": "svetxp_per_min",
+          "importance": 0.004278919553088643
+        },
+        {
+          "feature": "upg",
+          "importance": 0.003878677931485488
+        },
+        {
+          "feature": "vvetrank",
+          "importance": 0.0035819097512224214
+        },
+        {
+          "feature": "utypes",
+          "importance": 0.0035307366201957147
+        },
+        {
+          "feature": "bprod",
+          "importance": 0.0029330543763959644
+        },
+        {
+          "feature": "svetrank",
+          "importance": 0.002378981267480814
+        },
+        {
+          "feature": "blost",
+          "importance": 0.0014058355283361932
+        }
+      ]
+    },
+    "model_paths": {
+      "lr": "models/task1/lr_1v1_race0.joblib",
+      "rf": "models/task1/rf_1v1_race0.joblib"
+    }
+  },
+  {
+    "skipped": false,
+    "mode": "1v1",
+    "race_id": 1,
+    "metrics": {
+      "n_samples": 767,
+      "pos_rate": 0.43285528031290743,
+      "lr_acc": 0.8831168831168831,
+      "lr_f1": 0.8615384615384616,
+      "lr_auc": 0.9536798764796706,
+      "rf_acc": 0.9155844155844156,
+      "rf_f1": 0.9022556390977443,
+      "rf_auc": 0.9665465774575399,
+      "lr_confusion_matrix": [
+        [
+          80,
+          7
+        ],
+        [
+          11,
+          56
+        ]
+      ],
+      "rf_confusion_matrix": [
+        [
+          81,
+          6
+        ],
+        [
+          7,
+          60
+        ]
+      ],
+      "lr_report": {
+        "0": {
+          "precision": 0.8791208791208791,
+          "recall": 0.9195402298850575,
+          "f1-score": 0.898876404494382,
+          "support": 87.0
+        },
+        "1": {
+          "precision": 0.8888888888888888,
+          "recall": 0.835820895522388,
+          "f1-score": 0.8615384615384616,
+          "support": 67.0
+        },
+        "accuracy": 0.8831168831168831,
+        "macro avg": {
+          "precision": 0.884004884004884,
+          "recall": 0.8776805627037227,
+          "f1-score": 0.8802074330164218,
+          "support": 154.0
+        },
+        "weighted avg": {
+          "precision": 0.883370597656312,
+          "recall": 0.8831168831168831,
+          "f1-score": 0.8826319747668063,
+          "support": 154.0
+        }
+      },
+      "rf_report": {
+        "0": {
+          "precision": 0.9204545454545454,
+          "recall": 0.9310344827586207,
+          "f1-score": 0.9257142857142857,
+          "support": 87.0
+        },
+        "1": {
+          "precision": 0.9090909090909091,
+          "recall": 0.8955223880597015,
+          "f1-score": 0.9022556390977443,
+          "support": 67.0
+        },
+        "accuracy": 0.9155844155844156,
+        "macro avg": {
+          "precision": 0.9147727272727273,
+          "recall": 0.9132784354091611,
+          "f1-score": 0.913984962406015,
+          "support": 154.0
+        },
+        "weighted avg": {
+          "precision": 0.9155106257378985,
+          "recall": 0.9155844155844156,
+          "f1-score": 0.9155082511473488,
+          "support": 154.0
+        }
+      }
+    },
+    "logistic": {
+      "intercept": -0.9209992220668639,
+      "top5": [
+        {
+          "feature": "sqkilled_per_min",
+          "coef": 2.337774560034139
+        },
+        {
+          "feature": "bprod",
+          "coef": 1.3348178859795798
+        },
+        {
+          "feature": "cap_eff",
+          "coef": 1.1821274800986328
+        },
+        {
+          "feature": "fuelearn_per_min",
+          "coef": 1.0606147702451465
+        },
+        {
+          "feature": "munearn_per_min",
+          "coef": 1.0339301482958785
+        }
+      ],
+      "coef_table": [
+        {
+          "feature": "sqkilled_per_min",
+          "coef": 2.337774560034139
+        },
+        {
+          "feature": "bprod",
+          "coef": 1.3348178859795798
+        },
+        {
+          "feature": "cap_eff",
+          "coef": 1.1821274800986328
+        },
+        {
+          "feature": "fuelearn_per_min",
+          "coef": 1.0606147702451465
+        },
+        {
+          "feature": "munearn_per_min",
+          "coef": 1.0339301482958785
+        },
+        {
+          "feature": "fuel_spend_ratio",
+          "coef": 1.029783449134415
+        },
+        {
+          "feature": "fuel_float_ratio",
+          "coef": 0.9819978198950232
+        },
+        {
+          "feature": "upg",
+          "coef": -0.9794052455469036
+        },
+        {
+          "feature": "vvetrank",
+          "coef": 0.8722010468760606
+        },
+        {
+          "feature": "pcap_per_min",
+          "coef": 0.7909252834946786
+        },
+        {
+          "feature": "mun_float_ratio",
+          "coef": 0.7031694680803828
+        },
+        {
+          "feature": "squad_net_ratio",
+          "coef": 0.6660703757382742
+        },
+        {
+          "feature": "squad_loss_ratio",
+          "coef": -0.6492277992810794
+        },
+        {
+          "feature": "kills_per_man",
+          "coef": 0.6038267490703516
+        },
+        {
+          "feature": "dmg_per_death",
+          "coef": 0.567753918449044
+        },
+        {
+          "feature": "sqlost_per_min",
+          "coef": -0.5628429653896242
+        },
+        {
+          "feature": "ekills_per_min",
+          "coef": 0.5408008840455293
+        },
+        {
+          "feature": "dmg_per_fuel",
+          "coef": -0.5111586813798484
+        },
+        {
+          "feature": "edeaths_per_min",
+          "coef": -0.4997297742363829
+        },
+        {
+          "feature": "man_spend_ratio",
+          "coef": 0.46913319561892486
+        },
+        {
+          "feature": "plost_per_min",
+          "coef": -0.4518279992640243
+        },
+        {
+          "feature": "blost",
+          "coef": -0.4507512209111147
+        },
+        {
+          "feature": "cabil",
+          "coef": 0.4445989033478645
+        },
+        {
+          "feature": "manearn_per_min",
+          "coef": 0.4326246348544689
+        },
+        {
+          "feature": "mun_spend_ratio",
+          "coef": 0.3545390565120364
+        },
+        {
+          "feature": "utypes",
+          "coef": 0.34072635398624374
+        },
+        {
+          "feature": "abil",
+          "coef": -0.3338200322884907
+        },
+        {
+          "feature": "sqprod_per_min",
+          "coef": -0.32419168658663305
+        },
+        {
+          "feature": "cap_pressure_per_min",
+          "coef": 0.3181041892546947
+        },
+        {
+          "feature": "gt_min",
+          "coef": -0.26956746404562343
+        },
+        {
+          "feature": "vkill_per_fuel",
+          "coef": 0.2508969342127149
+        },
+        {
+          "feature": "vkill_per_min",
+          "coef": -0.22659195869004445
+        },
+        {
+          "feature": "dmg_per_min",
+          "coef": 0.1915786531444751
+        },
+        {
+          "feature": "svetxp_per_min",
+          "coef": 0.13929870623775367
+        },
+        {
+          "feature": "vlost_per_min",
+          "coef": -0.12790355043999974
+        },
+        {
+          "feature": "trade_eff_kd",
+          "coef": 0.11049790641810352
+        },
+        {
+          "feature": "dmg_per_man",
+          "coef": -0.11000809501572632
+        },
+        {
+          "feature": "svetrank",
+          "coef": 0.10892484598473827
+        },
+        {
+          "feature": "vloss_per_fuel",
+          "coef": -0.08048062368652831
+        },
+        {
+          "feature": "dmg_per_kill",
+          "coef": 0.07763758926180492
+        },
+        {
+          "feature": "vvetxp_per_min",
+          "coef": -0.05263043549484256
+        },
+        {
+          "feature": "man_float_ratio",
+          "coef": -0.0280665134161863
+        }
+      ]
+    },
+    "random_forest": {
+      "top5": [
+        {
+          "feature": "trade_eff_kd",
+          "importance": 0.15872653611592524
+        },
+        {
+          "feature": "dmg_per_death",
+          "importance": 0.0874744948473165
+        },
+        {
+          "feature": "sqkilled_per_min",
+          "importance": 0.08262265460293877
+        },
+        {
+          "feature": "ekills_per_min",
+          "importance": 0.07060023532850467
+        },
+        {
+          "feature": "kills_per_man",
+          "importance": 0.05577142871319995
+        }
+      ],
+      "importance_table": [
+        {
+          "feature": "trade_eff_kd",
+          "importance": 0.15872653611592524
+        },
+        {
+          "feature": "dmg_per_death",
+          "importance": 0.0874744948473165
+        },
+        {
+          "feature": "sqkilled_per_min",
+          "importance": 0.08262265460293877
+        },
+        {
+          "feature": "ekills_per_min",
+          "importance": 0.07060023532850467
+        },
+        {
+          "feature": "kills_per_man",
+          "importance": 0.05577142871319995
+        },
+        {
+          "feature": "munearn_per_min",
+          "importance": 0.05548215701613386
+        },
+        {
+          "feature": "sqlost_per_min",
+          "importance": 0.053854377636014396
+        },
+        {
+          "feature": "fuelearn_per_min",
+          "importance": 0.051352925758169514
+        },
+        {
+          "feature": "cap_eff",
+          "importance": 0.04002949414884409
+        },
+        {
+          "feature": "squad_net_ratio",
+          "importance": 0.037378635353915245
+        },
+        {
+          "feature": "edeaths_per_min",
+          "importance": 0.036844260017804095
+        },
+        {
+          "feature": "vkill_per_min",
+          "importance": 0.030883140885033845
+        },
+        {
+          "feature": "squad_loss_ratio",
+          "importance": 0.02542825376086805
+        },
+        {
+          "feature": "vloss_per_fuel",
+          "importance": 0.020609495308893826
+        },
+        {
+          "feature": "dmg_per_kill",
+          "importance": 0.013973919830658292
+        },
+        {
+          "feature": "pcap_per_min",
+          "importance": 0.013541836063116383
+        },
+        {
+          "feature": "vkill_per_fuel",
+          "importance": 0.012677657585652573
+        },
+        {
+          "feature": "vlost_per_min",
+          "importance": 0.012243391024652685
+        },
+        {
+          "feature": "manearn_per_min",
+          "importance": 0.010136562906931119
+        },
+        {
+          "feature": "bprod",
+          "importance": 0.009527345445023956
+        },
+        {
+          "feature": "dmg_per_min",
+          "importance": 0.008942795223943017
+        },
+        {
+          "feature": "man_spend_ratio",
+          "importance": 0.008252689120535877
+        },
+        {
+          "feature": "cap_pressure_per_min",
+          "importance": 0.007627242308013235
+        },
+        {
+          "feature": "dmg_per_man",
+          "importance": 0.007102421810591195
+        },
+        {
+          "feature": "abil",
+          "importance": 0.00681190503804599
+        },
+        {
+          "feature": "dmg_per_fuel",
+          "importance": 0.006792669162597548
+        },
+        {
+          "feature": "sqprod_per_min",
+          "importance": 0.006519529205785295
+        },
+        {
+          "feature": "man_float_ratio",
+          "importance": 0.0058357235324852956
+        },
+        {
+          "feature": "fuel_float_ratio",
+          "importance": 0.005792366586026213
+        },
+        {
+          "feature": "mun_float_ratio",
+          "importance": 0.005773689260176364
+        },
+        {
+          "feature": "gt_min",
+          "importance": 0.005566631818015869
+        },
+        {
+          "feature": "vvetxp_per_min",
+          "importance": 0.005565803349481524
+        },
+        {
+          "feature": "mun_spend_ratio",
+          "importance": 0.004982081254006088
+        },
+        {
+          "feature": "plost_per_min",
+          "importance": 0.004758860214873185
+        },
+        {
+          "feature": "svetxp_per_min",
+          "importance": 0.004655834108981975
+        },
+        {
+          "feature": "fuel_spend_ratio",
+          "importance": 0.004636782797756467
+        },
+        {
+          "feature": "cabil",
+          "importance": 0.0044673804533169464
+        },
+        {
+          "feature": "vvetrank",
+          "importance": 0.004211640400218465
+        },
+        {
+          "feature": "utypes",
+          "importance": 0.004101428947552818
+        },
+        {
+          "feature": "upg",
+          "importance": 0.0030933911082926258
+        },
+        {
+          "feature": "blost",
+          "importance": 0.002781516232773769
+        },
+        {
+          "feature": "svetrank",
+          "importance": 0.0025688157169332115
+        }
+      ]
+    },
+    "model_paths": {
+      "lr": "models/task1/lr_1v1_race1.joblib",
+      "rf": "models/task1/rf_1v1_race1.joblib"
+    }
+  },
+  {
+    "skipped": false,
+    "mode": "1v1",
+    "race_id": 2,
+    "metrics": {
+      "n_samples": 1072,
+      "pos_rate": 0.5018656716417911,
+      "lr_acc": 0.9209302325581395,
+      "lr_f1": 0.9216589861751152,
+      "lr_auc": 0.9749913464866735,
+      "rf_acc": 0.9395348837209302,
+      "rf_f1": 0.9406392694063926,
+      "rf_auc": 0.9878850813430253,
+      "lr_confusion_matrix": [
+        [
+          98,
+          9
+        ],
+        [
+          8,
+          100
+        ]
+      ],
+      "rf_confusion_matrix": [
+        [
+          99,
+          8
+        ],
+        [
+          5,
+          103
+        ]
+      ],
+      "lr_report": {
+        "0": {
+          "precision": 0.9245283018867925,
+          "recall": 0.9158878504672897,
+          "f1-score": 0.92018779342723,
+          "support": 107.0
+        },
+        "1": {
+          "precision": 0.9174311926605505,
+          "recall": 0.9259259259259259,
+          "f1-score": 0.9216589861751152,
+          "support": 108.0
+        },
+        "accuracy": 0.9209302325581395,
+        "macro avg": {
+          "precision": 0.9209797472736715,
+          "recall": 0.9209068881966078,
+          "f1-score": 0.9209233898011726,
+          "support": 215.0
+        },
+        "weighted avg": {
+          "precision": 0.9209632423684943,
+          "recall": 0.9209302325581395,
+          "f1-score": 0.9209268111796561,
+          "support": 215.0
+        }
+      },
+      "rf_report": {
+        "0": {
+          "precision": 0.9519230769230769,
+          "recall": 0.9252336448598131,
+          "f1-score": 0.9383886255924171,
+          "support": 107.0
+        },
+        "1": {
+          "precision": 0.9279279279279279,
+          "recall": 0.9537037037037037,
+          "f1-score": 0.9406392694063926,
+          "support": 108.0
+        },
+        "accuracy": 0.9395348837209302,
+        "macro avg": {
+          "precision": 0.9399255024255024,
+          "recall": 0.9394686742817584,
+          "f1-score": 0.9395139474994049,
+          "support": 215.0
+        },
+        "weighted avg": {
+          "precision": 0.9398696997534206,
+          "recall": 0.9395348837209302,
+          "f1-score": 0.9395191815547862,
+          "support": 215.0
+        }
+      }
+    },
+    "logistic": {
+      "intercept": 0.5416274878833522,
+      "top5": [
+        {
+          "feature": "sqkilled_per_min",
+          "coef": 2.028728802812415
+        },
+        {
+          "feature": "vkill_per_fuel",
+          "coef": 1.270742734631123
+        },
+        {
+          "feature": "pcap_per_min",
+          "coef": 1.242605282737037
+        },
+        {
+          "feature": "plost_per_min",
+          "coef": -1.067891717458902
+        },
+        {
+          "feature": "sqlost_per_min",
+          "coef": -0.9959183717303538
+        }
+      ],
+      "coef_table": [
+        {
+          "feature": "sqkilled_per_min",
+          "coef": 2.028728802812415
+        },
+        {
+          "feature": "vkill_per_fuel",
+          "coef": 1.270742734631123
+        },
+        {
+          "feature": "pcap_per_min",
+          "coef": 1.242605282737037
+        },
+        {
+          "feature": "plost_per_min",
+          "coef": -1.067891717458902
+        },
+        {
+          "feature": "sqlost_per_min",
+          "coef": -0.9959183717303538
+        },
+        {
+          "feature": "dmg_per_death",
+          "coef": 0.9343659927647715
+        },
+        {
+          "feature": "fuelearn_per_min",
+          "coef": 0.8774695066111228
+        },
+        {
+          "feature": "trade_eff_kd",
+          "coef": 0.8600444040122446
+        },
+        {
+          "feature": "edeaths_per_min",
+          "coef": -0.7673586323219989
+        },
+        {
+          "feature": "gt_min",
+          "coef": -0.6964036396096642
+        },
+        {
+          "feature": "sqprod_per_min",
+          "coef": -0.668672033430864
+        },
+        {
+          "feature": "mun_float_ratio",
+          "coef": 0.6654788164567828
+        },
+        {
+          "feature": "svetxp_per_min",
+          "coef": -0.6609998756342798
+        },
+        {
+          "feature": "man_float_ratio",
+          "coef": 0.6087441703223223
+        },
+        {
+          "feature": "utypes",
+          "coef": 0.5842966826929293
+        },
+        {
+          "feature": "bprod",
+          "coef": 0.5309658059036827
+        },
+        {
+          "feature": "squad_loss_ratio",
+          "coef": -0.4996621340282167
+        },
+        {
+          "feature": "ekills_per_min",
+          "coef": 0.44993015259444197
+        },
+        {
+          "feature": "cabil",
+          "coef": 0.43880672775680285
+        },
+        {
+          "feature": "abil",
+          "coef": -0.43115894510609554
+        },
+        {
+          "feature": "vvetrank",
+          "coef": 0.40752828322098716
+        },
+        {
+          "feature": "munearn_per_min",
+          "coef": 0.4026528675407498
+        },
+        {
+          "feature": "vlost_per_min",
+          "coef": -0.3485095508754101
+        },
+        {
+          "feature": "svetrank",
+          "coef": 0.33773529884406295
+        },
+        {
+          "feature": "upg",
+          "coef": -0.3211093385379071
+        },
+        {
+          "feature": "cap_pressure_per_min",
+          "coef": 0.30858653763915456
+        },
+        {
+          "feature": "dmg_per_min",
+          "coef": 0.28881903949731735
+        },
+        {
+          "feature": "man_spend_ratio",
+          "coef": 0.2866418898571637
+        },
+        {
+          "feature": "vloss_per_fuel",
+          "coef": -0.27737343302136763
+        },
+        {
+          "feature": "fuel_float_ratio",
+          "coef": 0.27278811463489744
+        },
+        {
+          "feature": "mun_spend_ratio",
+          "coef": -0.2619481734912402
+        },
+        {
+          "feature": "dmg_per_fuel",
+          "coef": -0.25625074916190055
+        },
+        {
+          "feature": "vkill_per_min",
+          "coef": -0.2337653348620001
+        },
+        {
+          "feature": "dmg_per_man",
+          "coef": 0.20819467572084607
+        },
+        {
+          "feature": "squad_net_ratio",
+          "coef": 0.18522128263812426
+        },
+        {
+          "feature": "vvetxp_per_min",
+          "coef": 0.1730167344922583
+        },
+        {
+          "feature": "kills_per_man",
+          "coef": 0.170188833550552
+        },
+        {
+          "feature": "fuel_spend_ratio",
+          "coef": 0.15911720136648821
+        },
+        {
+          "feature": "cap_eff",
+          "coef": -0.12889675684699753
+        },
+        {
+          "feature": "manearn_per_min",
+          "coef": -0.10167931841897049
+        },
+        {
+          "feature": "dmg_per_kill",
+          "coef": -0.04565472955381474
+        },
+        {
+          "feature": "blost",
+          "coef": -0.014008904069275784
+        }
+      ]
+    },
+    "random_forest": {
+      "top5": [
+        {
+          "feature": "trade_eff_kd",
+          "importance": 0.17225688283665982
+        },
+        {
+          "feature": "sqlost_per_min",
+          "importance": 0.07675323054202592
+        },
+        {
+          "feature": "sqkilled_per_min",
+          "importance": 0.07594851531630603
+        },
+        {
+          "feature": "dmg_per_death",
+          "importance": 0.07462599072434518
+        },
+        {
+          "feature": "cap_eff",
+          "importance": 0.06274331417392949
+        }
+      ],
+      "importance_table": [
+        {
+          "feature": "trade_eff_kd",
+          "importance": 0.17225688283665982
+        },
+        {
+          "feature": "sqlost_per_min",
+          "importance": 0.07675323054202592
+        },
+        {
+          "feature": "sqkilled_per_min",
+          "importance": 0.07594851531630603
+        },
+        {
+          "feature": "dmg_per_death",
+          "importance": 0.07462599072434518
+        },
+        {
+          "feature": "cap_eff",
+          "importance": 0.06274331417392949
+        },
+        {
+          "feature": "edeaths_per_min",
+          "importance": 0.05693194900955725
+        },
+        {
+          "feature": "squad_net_ratio",
+          "importance": 0.054662373927691583
+        },
+        {
+          "feature": "vloss_per_fuel",
+          "importance": 0.041702363038278185
+        },
+        {
+          "feature": "squad_loss_ratio",
+          "importance": 0.03744052241140833
+        },
+        {
+          "feature": "ekills_per_min",
+          "importance": 0.034116102365369314
+        },
+        {
+          "feature": "kills_per_man",
+          "importance": 0.03171403988230016
+        },
+        {
+          "feature": "vlost_per_min",
+          "importance": 0.024540441987773522
+        },
+        {
+          "feature": "fuelearn_per_min",
+          "importance": 0.023787314148156546
+        },
+        {
+          "feature": "vkill_per_min",
+          "importance": 0.022525104354535055
+        },
+        {
+          "feature": "munearn_per_min",
+          "importance": 0.02106374656676423
+        },
+        {
+          "feature": "vkill_per_fuel",
+          "importance": 0.0180354991954033
+        },
+        {
+          "feature": "dmg_per_kill",
+          "importance": 0.015908578667300832
+        },
+        {
+          "feature": "pcap_per_min",
+          "importance": 0.012462398354441217
+        },
+        {
+          "feature": "cabil",
+          "importance": 0.009004546918961236
+        },
+        {
+          "feature": "man_float_ratio",
+          "importance": 0.008379614897481066
+        },
+        {
+          "feature": "manearn_per_min",
+          "importance": 0.007754835136443039
+        },
+        {
+          "feature": "man_spend_ratio",
+          "importance": 0.007726471010646387
+        },
+        {
+          "feature": "sqprod_per_min",
+          "importance": 0.007640557250998474
+        },
+        {
+          "feature": "vvetxp_per_min",
+          "importance": 0.0073485299116188936
+        },
+        {
+          "feature": "dmg_per_min",
+          "importance": 0.006771212328345129
+        },
+        {
+          "feature": "cap_pressure_per_min",
+          "importance": 0.006543466331392009
+        },
+        {
+          "feature": "mun_float_ratio",
+          "importance": 0.0065273744190502865
+        },
+        {
+          "feature": "gt_min",
+          "importance": 0.006402769764527615
+        },
+        {
+          "feature": "dmg_per_man",
+          "importance": 0.006379706550043831
+        },
+        {
+          "feature": "fuel_float_ratio",
+          "importance": 0.006212335129879808
+        },
+        {
+          "feature": "mun_spend_ratio",
+          "importance": 0.006132541773508412
+        },
+        {
+          "feature": "dmg_per_fuel",
+          "importance": 0.006117648348255001
+        },
+        {
+          "feature": "plost_per_min",
+          "importance": 0.0060602062631645555
+        },
+        {
+          "feature": "svetxp_per_min",
+          "importance": 0.0056521083739746025
+        },
+        {
+          "feature": "abil",
+          "importance": 0.005548556846819296
+        },
+        {
+          "feature": "vvetrank",
+          "importance": 0.005282015406347337
+        },
+        {
+          "feature": "fuel_spend_ratio",
+          "importance": 0.005097448691485524
+        },
+        {
+          "feature": "upg",
+          "importance": 0.0038670172474555772
+        },
+        {
+          "feature": "svetrank",
+          "importance": 0.003594056104287351
+        },
+        {
+          "feature": "bprod",
+          "importance": 0.0031235722222889076
+        },
+        {
+          "feature": "utypes",
+          "importance": 0.0030585486098026306
+        },
+        {
+          "feature": "blost",
+          "importance": 0.002556492960977214
+        }
+      ]
+    },
+    "model_paths": {
+      "lr": "models/task1/lr_1v1_race2.joblib",
+      "rf": "models/task1/rf_1v1_race2.joblib"
+    }
+  },
+  {
+    "skipped": false,
+    "mode": "1v1",
+    "race_id": 3,
+    "metrics": {
+      "n_samples": 480,
+      "pos_rate": 0.5145833333333333,
+      "lr_acc": 0.9166666666666666,
+      "lr_f1": 0.9183673469387755,
+      "lr_auc": 0.9826313504125054,
+      "rf_acc": 0.9479166666666666,
+      "rf_f1": 0.9473684210526315,
+      "rf_auc": 0.9861050803300043,
+      "lr_confusion_matrix": [
+        [
+          43,
+          4
+        ],
+        [
+          4,
+          45
+        ]
+      ],
+      "rf_confusion_matrix": [
+        [
+          46,
+          1
+        ],
+        [
+          4,
+          45
+        ]
+      ],
+      "lr_report": {
+        "0": {
+          "precision": 0.9148936170212766,
+          "recall": 0.9148936170212766,
+          "f1-score": 0.9148936170212766,
+          "support": 47.0
+        },
+        "1": {
+          "precision": 0.9183673469387755,
+          "recall": 0.9183673469387755,
+          "f1-score": 0.9183673469387755,
+          "support": 49.0
+        },
+        "accuracy": 0.9166666666666666,
+        "macro avg": {
+          "precision": 0.9166304819800261,
+          "recall": 0.9166304819800261,
+          "f1-score": 0.9166304819800261,
+          "support": 96.0
+        },
+        "weighted avg": {
+          "precision": 0.9166666666666666,
+          "recall": 0.9166666666666666,
+          "f1-score": 0.9166666666666666,
+          "support": 96.0
+        }
+      },
+      "rf_report": {
+        "0": {
+          "precision": 0.92,
+          "recall": 0.9787234042553191,
+          "f1-score": 0.9484536082474226,
+          "support": 47.0
+        },
+        "1": {
+          "precision": 0.9782608695652174,
+          "recall": 0.9183673469387755,
+          "f1-score": 0.9473684210526315,
+          "support": 49.0
+        },
+        "accuracy": 0.9479166666666666,
+        "macro avg": {
+          "precision": 0.9491304347826087,
+          "recall": 0.9485453755970473,
+          "f1-score": 0.9479110146500271,
+          "support": 96.0
+        },
+        "weighted avg": {
+          "precision": 0.9497373188405799,
+          "recall": 0.9479166666666666,
+          "f1-score": 0.947899710616748,
+          "support": 96.0
+        }
+      }
+    },
+    "logistic": {
+      "intercept": 0.31532374531366575,
+      "top5": [
+        {
+          "feature": "sqlost_per_min",
+          "coef": -1.8912380071336476
+        },
+        {
+          "feature": "sqkilled_per_min",
+          "coef": 1.6904692778057042
+        },
+        {
+          "feature": "cabil",
+          "coef": 1.0936339524947236
+        },
+        {
+          "feature": "trade_eff_kd",
+          "coef": 0.9665644587045441
+        },
+        {
+          "feature": "vkill_per_min",
+          "coef": 0.8860193763070825
+        }
+      ],
+      "coef_table": [
+        {
+          "feature": "sqlost_per_min",
+          "coef": -1.8912380071336476
+        },
+        {
+          "feature": "sqkilled_per_min",
+          "coef": 1.6904692778057042
+        },
+        {
+          "feature": "cabil",
+          "coef": 1.0936339524947236
+        },
+        {
+          "feature": "trade_eff_kd",
+          "coef": 0.9665644587045441
+        },
+        {
+          "feature": "vkill_per_min",
+          "coef": 0.8860193763070825
+        },
+        {
+          "feature": "vvetxp_per_min",
+          "coef": 0.8688564960521717
+        },
+        {
+          "feature": "edeaths_per_min",
+          "coef": -0.8641627039268285
+        },
+        {
+          "feature": "dmg_per_death",
+          "coef": 0.8377289471815087
+        },
+        {
+          "feature": "man_float_ratio",
+          "coef": 0.8271654769422632
+        },
+        {
+          "feature": "squad_loss_ratio",
+          "coef": -0.7814366571883161
+        },
+        {
+          "feature": "svetxp_per_min",
+          "coef": -0.7256791237829386
+        },
+        {
+          "feature": "dmg_per_kill",
+          "coef": -0.6995891205764934
+        },
+        {
+          "feature": "utypes",
+          "coef": -0.6905913579323764
+        },
+        {
+          "feature": "squad_net_ratio",
+          "coef": 0.6277849249914229
+        },
+        {
+          "feature": "plost_per_min",
+          "coef": -0.5530998883940978
+        },
+        {
+          "feature": "manearn_per_min",
+          "coef": 0.5246192944930888
+        },
+        {
+          "feature": "munearn_per_min",
+          "coef": 0.5134196053384482
+        },
+        {
+          "feature": "fuel_float_ratio",
+          "coef": -0.488727510453161
+        },
+        {
+          "feature": "upg",
+          "coef": 0.43887035636706767
+        },
+        {
+          "feature": "vlost_per_min",
+          "coef": 0.42366176858805527
+        },
+        {
+          "feature": "fuelearn_per_min",
+          "coef": 0.3756545586283525
+        },
+        {
+          "feature": "man_spend_ratio",
+          "coef": 0.3588717711259164
+        },
+        {
+          "feature": "ekills_per_min",
+          "coef": 0.3387017830916025
+        },
+        {
+          "feature": "kills_per_man",
+          "coef": 0.26564221016884515
+        },
+        {
+          "feature": "gt_min",
+          "coef": 0.24878183205484677
+        },
+        {
+          "feature": "mun_spend_ratio",
+          "coef": -0.24305151910036282
+        },
+        {
+          "feature": "dmg_per_min",
+          "coef": 0.22404500955818704
+        },
+        {
+          "feature": "dmg_per_man",
+          "coef": 0.2151283810038194
+        },
+        {
+          "feature": "bprod",
+          "coef": 0.2065074702919168
+        },
+        {
+          "feature": "cap_eff",
+          "coef": -0.19591813156343638
+        },
+        {
+          "feature": "cap_pressure_per_min",
+          "coef": -0.1783884419928973
+        },
+        {
+          "feature": "pcap_per_min",
+          "coef": 0.16754627333124325
+        },
+        {
+          "feature": "blost",
+          "coef": -0.14784867472125424
+        },
+        {
+          "feature": "vvetrank",
+          "coef": -0.13304695732252445
+        },
+        {
+          "feature": "dmg_per_fuel",
+          "coef": -0.13292687771009631
+        },
+        {
+          "feature": "abil",
+          "coef": -0.0757689443800051
+        },
+        {
+          "feature": "svetrank",
+          "coef": 0.06267936095246272
+        },
+        {
+          "feature": "mun_float_ratio",
+          "coef": 0.05285477364723618
+        },
+        {
+          "feature": "fuel_spend_ratio",
+          "coef": 0.050991689105763724
+        },
+        {
+          "feature": "vloss_per_fuel",
+          "coef": -0.045747978854378174
+        },
+        {
+          "feature": "sqprod_per_min",
+          "coef": 0.031182831452147772
+        },
+        {
+          "feature": "vkill_per_fuel",
+          "coef": -0.0018580171514941796
+        }
+      ]
+    },
+    "random_forest": {
+      "top5": [
+        {
+          "feature": "trade_eff_kd",
+          "importance": 0.1850030397743729
+        },
+        {
+          "feature": "edeaths_per_min",
+          "importance": 0.07786175530917636
+        },
+        {
+          "feature": "sqkilled_per_min",
+          "importance": 0.07552926740073056
+        },
+        {
+          "feature": "sqlost_per_min",
+          "importance": 0.07399732966998736
+        },
+        {
+          "feature": "dmg_per_death",
+          "importance": 0.06974562288365314
+        }
+      ],
+      "importance_table": [
+        {
+          "feature": "trade_eff_kd",
+          "importance": 0.1850030397743729
+        },
+        {
+          "feature": "edeaths_per_min",
+          "importance": 0.07786175530917636
+        },
+        {
+          "feature": "sqkilled_per_min",
+          "importance": 0.07552926740073056
+        },
+        {
+          "feature": "sqlost_per_min",
+          "importance": 0.07399732966998736
+        },
+        {
+          "feature": "dmg_per_death",
+          "importance": 0.06974562288365314
+        },
+        {
+          "feature": "squad_net_ratio",
+          "importance": 0.05780689963393611
+        },
+        {
+          "feature": "vkill_per_min",
+          "importance": 0.045990638123942336
+        },
+        {
+          "feature": "cap_eff",
+          "importance": 0.04347627450824706
+        },
+        {
+          "feature": "squad_loss_ratio",
+          "importance": 0.043209071294720534
+        },
+        {
+          "feature": "vloss_per_fuel",
+          "importance": 0.03918082049471596
+        },
+        {
+          "feature": "ekills_per_min",
+          "importance": 0.036744653841660965
+        },
+        {
+          "feature": "kills_per_man",
+          "importance": 0.031091783315415622
+        },
+        {
+          "feature": "munearn_per_min",
+          "importance": 0.024614819968660922
+        },
+        {
+          "feature": "fuelearn_per_min",
+          "importance": 0.023660707886849375
+        },
+        {
+          "feature": "vkill_per_fuel",
+          "importance": 0.018546188055035703
+        },
+        {
+          "feature": "vlost_per_min",
+          "importance": 0.013803082325434849
+        },
+        {
+          "feature": "dmg_per_kill",
+          "importance": 0.013739735748700414
+        },
+        {
+          "feature": "dmg_per_min",
+          "importance": 0.008933653229748704
+        },
+        {
+          "feature": "man_float_ratio",
+          "importance": 0.008119764173342599
+        },
+        {
+          "feature": "fuel_float_ratio",
+          "importance": 0.008021981737639784
+        },
+        {
+          "feature": "sqprod_per_min",
+          "importance": 0.007005068066937687
+        },
+        {
+          "feature": "pcap_per_min",
+          "importance": 0.006816552711165448
+        },
+        {
+          "feature": "dmg_per_man",
+          "importance": 0.00642389900950885
+        },
+        {
+          "feature": "man_spend_ratio",
+          "importance": 0.00626836288019846
+        },
+        {
+          "feature": "abil",
+          "importance": 0.006047912986738949
+        },
+        {
+          "feature": "cabil",
+          "importance": 0.005725134499521323
+        },
+        {
+          "feature": "gt_min",
+          "importance": 0.0056649489019760845
+        },
+        {
+          "feature": "mun_float_ratio",
+          "importance": 0.005141846426174178
+        },
+        {
+          "feature": "manearn_per_min",
+          "importance": 0.004859155719784614
+        },
+        {
+          "feature": "plost_per_min",
+          "importance": 0.004499657733306119
+        },
+        {
+          "feature": "svetxp_per_min",
+          "importance": 0.004418527922604702
+        },
+        {
+          "feature": "fuel_spend_ratio",
+          "importance": 0.004365796621262728
+        },
+        {
+          "feature": "cap_pressure_per_min",
+          "importance": 0.004336800500669024
+        },
+        {
+          "feature": "vvetxp_per_min",
+          "importance": 0.0041001460805666435
+        },
+        {
+          "feature": "dmg_per_fuel",
+          "importance": 0.0038833585945197606
+        },
+        {
+          "feature": "utypes",
+          "importance": 0.0037155227796063584
+        },
+        {
+          "feature": "mun_spend_ratio",
+          "importance": 0.003584355513242694
+        },
+        {
+          "feature": "svetrank",
+          "importance": 0.0031533759357178126
+        },
+        {
+          "feature": "upg",
+          "importance": 0.0028989641458125274
+        },
+        {
+          "feature": "bprod",
+          "importance": 0.0028618696401582822
+        },
+        {
+          "feature": "vvetrank",
+          "importance": 0.0027364266445275088
+        },
+        {
+          "feature": "blost",
+          "importance": 0.0024152273100290864
+        }
+      ]
+    },
+    "model_paths": {
+      "lr": "models/task1/lr_1v1_race3.joblib",
+      "rf": "models/task1/rf_1v1_race3.joblib"
+    }
+  },
+  {
+    "skipped": false,
+    "mode": "1v1",
+    "race_id": 4,
+    "metrics": {
+      "n_samples": 576,
+      "pos_rate": 0.5347222222222222,
+      "lr_acc": 0.9655172413793104,
+      "lr_f1": 0.9672131147540983,
+      "lr_auc": 0.9982078853046595,
+      "rf_acc": 0.9396551724137931,
+      "rf_f1": 0.944,
+      "rf_auc": 0.9917861409796893,
+      "lr_confusion_matrix": [
+        [
+          53,
+          1
+        ],
+        [
+          3,
+          59
+        ]
+      ],
+      "rf_confusion_matrix": [
+        [
+          50,
+          4
+        ],
+        [
+          3,
+          59
+        ]
+      ],
+      "lr_report": {
+        "0": {
+          "precision": 0.9464285714285714,
+          "recall": 0.9814814814814815,
+          "f1-score": 0.9636363636363636,
+          "support": 54.0
+        },
+        "1": {
+          "precision": 0.9833333333333333,
+          "recall": 0.9516129032258065,
+          "f1-score": 0.9672131147540983,
+          "support": 62.0
+        },
+        "accuracy": 0.9655172413793104,
+        "macro avg": {
+          "precision": 0.9648809523809523,
+          "recall": 0.966547192353644,
+          "f1-score": 0.965424739195231,
+          "support": 116.0
+        },
+        "weighted avg": {
+          "precision": 0.9661535303776683,
+          "recall": 0.9655172413793104,
+          "f1-score": 0.9655480754406701,
+          "support": 116.0
+        }
+      },
+      "rf_report": {
+        "0": {
+          "precision": 0.9433962264150944,
+          "recall": 0.9259259259259259,
+          "f1-score": 0.9345794392523364,
+          "support": 54.0
+        },
+        "1": {
+          "precision": 0.9365079365079365,
+          "recall": 0.9516129032258065,
+          "f1-score": 0.944,
+          "support": 62.0
+        },
+        "accuracy": 0.9396551724137931,
+        "macro avg": {
+          "precision": 0.9399520814615154,
+          "recall": 0.9387694145758663,
+          "f1-score": 0.9392897196261683,
+          "support": 116.0
+        },
+        "weighted avg": {
+          "precision": 0.9397145542233375,
+          "recall": 0.9396551724137931,
+          "f1-score": 0.9396145665485014,
+          "support": 116.0
+        }
+      }
+    },
+    "logistic": {
+      "intercept": 0.293264664738747,
+      "top5": [
+        {
+          "feature": "sqkilled_per_min",
+          "coef": 2.0776370464280474
+        },
+        {
+          "feature": "sqlost_per_min",
+          "coef": -1.4179514433634421
+        },
+        {
+          "feature": "edeaths_per_min",
+          "coef": -1.252878374917645
+        },
+        {
+          "feature": "cap_eff",
+          "coef": 1.0394307206563382
+        },
+        {
+          "feature": "man_spend_ratio",
+          "coef": 1.0065486993131691
+        }
+      ],
+      "coef_table": [
+        {
+          "feature": "sqkilled_per_min",
+          "coef": 2.0776370464280474
+        },
+        {
+          "feature": "sqlost_per_min",
+          "coef": -1.4179514433634421
+        },
+        {
+          "feature": "edeaths_per_min",
+          "coef": -1.252878374917645
+        },
+        {
+          "feature": "cap_eff",
+          "coef": 1.0394307206563382
+        },
+        {
+          "feature": "man_spend_ratio",
+          "coef": 1.0065486993131691
+        },
+        {
+          "feature": "fuelearn_per_min",
+          "coef": 0.9385879273352035
+        },
+        {
+          "feature": "cabil",
+          "coef": 0.8629491508468281
+        },
+        {
+          "feature": "plost_per_min",
+          "coef": -0.7877446187376342
+        },
+        {
+          "feature": "vloss_per_fuel",
+          "coef": -0.7573402563594596
+        },
+        {
+          "feature": "pcap_per_min",
+          "coef": 0.7264622494677254
+        },
+        {
+          "feature": "mun_spend_ratio",
+          "coef": 0.6660067756067258
+        },
+        {
+          "feature": "ekills_per_min",
+          "coef": 0.6641683279753653
+        },
+        {
+          "feature": "man_float_ratio",
+          "coef": 0.6465203933073858
+        },
+        {
+          "feature": "kills_per_man",
+          "coef": 0.6087053467580219
+        },
+        {
+          "feature": "mun_float_ratio",
+          "coef": -0.5834831230569851
+        },
+        {
+          "feature": "vlost_per_min",
+          "coef": -0.5828632354755839
+        },
+        {
+          "feature": "trade_eff_kd",
+          "coef": 0.5508871433281338
+        },
+        {
+          "feature": "manearn_per_min",
+          "coef": -0.5499892429903684
+        },
+        {
+          "feature": "dmg_per_death",
+          "coef": 0.4690000063667934
+        },
+        {
+          "feature": "vvetrank",
+          "coef": -0.4548707580195089
+        },
+        {
+          "feature": "abil",
+          "coef": -0.38403700490001563
+        },
+        {
+          "feature": "dmg_per_fuel",
+          "coef": -0.3393823614867621
+        },
+        {
+          "feature": "svetxp_per_min",
+          "coef": -0.3358372030210187
+        },
+        {
+          "feature": "blost",
+          "coef": -0.2750900091816389
+        },
+        {
+          "feature": "munearn_per_min",
+          "coef": 0.27156355329837795
+        },
+        {
+          "feature": "vkill_per_min",
+          "coef": 0.2430660202904499
+        },
+        {
+          "feature": "dmg_per_kill",
+          "coef": 0.23802399544388336
+        },
+        {
+          "feature": "svetrank",
+          "coef": -0.2321041026872838
+        },
+        {
+          "feature": "fuel_float_ratio",
+          "coef": 0.1929311304256991
+        },
+        {
+          "feature": "vvetxp_per_min",
+          "coef": -0.1724815907565469
+        },
+        {
+          "feature": "squad_net_ratio",
+          "coef": -0.16968002672041982
+        },
+        {
+          "feature": "sqprod_per_min",
+          "coef": -0.15855688203254129
+        },
+        {
+          "feature": "bprod",
+          "coef": 0.15223556683189993
+        },
+        {
+          "feature": "utypes",
+          "coef": -0.13733651227550034
+        },
+        {
+          "feature": "squad_loss_ratio",
+          "coef": 0.13533809136508185
+        },
+        {
+          "feature": "fuel_spend_ratio",
+          "coef": 0.10099855159513872
+        },
+        {
+          "feature": "upg",
+          "coef": -0.09790057094380898
+        },
+        {
+          "feature": "gt_min",
+          "coef": -0.09355496541088888
+        },
+        {
+          "feature": "dmg_per_man",
+          "coef": 0.09351372937277545
+        },
+        {
+          "feature": "cap_pressure_per_min",
+          "coef": 0.05649869062718883
+        },
+        {
+          "feature": "dmg_per_min",
+          "coef": -0.028628756823714685
+        },
+        {
+          "feature": "vkill_per_fuel",
+          "coef": -0.0012940250027820713
+        }
+      ]
+    },
+    "random_forest": {
+      "top5": [
+        {
+          "feature": "trade_eff_kd",
+          "importance": 0.16488910708986562
+        },
+        {
+          "feature": "sqlost_per_min",
+          "importance": 0.10643467062662601
+        },
+        {
+          "feature": "squad_net_ratio",
+          "importance": 0.075319127442081
+        },
+        {
+          "feature": "edeaths_per_min",
+          "importance": 0.07430394646021929
+        },
+        {
+          "feature": "dmg_per_death",
+          "importance": 0.05346291241986233
+        }
+      ],
+      "importance_table": [
+        {
+          "feature": "trade_eff_kd",
+          "importance": 0.16488910708986562
+        },
+        {
+          "feature": "sqlost_per_min",
+          "importance": 0.10643467062662601
+        },
+        {
+          "feature": "squad_net_ratio",
+          "importance": 0.075319127442081
+        },
+        {
+          "feature": "edeaths_per_min",
+          "importance": 0.07430394646021929
+        },
+        {
+          "feature": "dmg_per_death",
+          "importance": 0.05346291241986233
+        },
+        {
+          "feature": "vloss_per_fuel",
+          "importance": 0.05252052601299013
+        },
+        {
+          "feature": "squad_loss_ratio",
+          "importance": 0.052305356280804655
+        },
+        {
+          "feature": "sqkilled_per_min",
+          "importance": 0.04949544179273119
+        },
+        {
+          "feature": "cap_eff",
+          "importance": 0.04379093415637663
+        },
+        {
+          "feature": "kills_per_man",
+          "importance": 0.040903206842344504
+        },
+        {
+          "feature": "ekills_per_min",
+          "importance": 0.03972027874724028
+        },
+        {
+          "feature": "fuelearn_per_min",
+          "importance": 0.02395305046515303
+        },
+        {
+          "feature": "vlost_per_min",
+          "importance": 0.019496210302041954
+        },
+        {
+          "feature": "dmg_per_kill",
+          "importance": 0.01786844513220679
+        },
+        {
+          "feature": "vkill_per_min",
+          "importance": 0.017619547980662176
+        },
+        {
+          "feature": "munearn_per_min",
+          "importance": 0.01649537713834123
+        },
+        {
+          "feature": "man_float_ratio",
+          "importance": 0.01085795813631067
+        },
+        {
+          "feature": "sqprod_per_min",
+          "importance": 0.010520903071174
+        },
+        {
+          "feature": "dmg_per_min",
+          "importance": 0.00965272301351458
+        },
+        {
+          "feature": "dmg_per_fuel",
+          "importance": 0.009627542922709311
+        },
+        {
+          "feature": "dmg_per_man",
+          "importance": 0.008441576636602173
+        },
+        {
+          "feature": "man_spend_ratio",
+          "importance": 0.008063459657049358
+        },
+        {
+          "feature": "manearn_per_min",
+          "importance": 0.007324308372279806
+        },
+        {
+          "feature": "pcap_per_min",
+          "importance": 0.006862535519656414
+        },
+        {
+          "feature": "mun_float_ratio",
+          "importance": 0.006707148062708112
+        },
+        {
+          "feature": "vkill_per_fuel",
+          "importance": 0.006692594268679549
+        },
+        {
+          "feature": "plost_per_min",
+          "importance": 0.005910729202335701
+        },
+        {
+          "feature": "cabil",
+          "importance": 0.005575336862051906
+        },
+        {
+          "feature": "mun_spend_ratio",
+          "importance": 0.005463708100694834
+        },
+        {
+          "feature": "svetxp_per_min",
+          "importance": 0.005071401023636818
+        },
+        {
+          "feature": "gt_min",
+          "importance": 0.005063018199407033
+        },
+        {
+          "feature": "fuel_float_ratio",
+          "importance": 0.004748117274412471
+        },
+        {
+          "feature": "abil",
+          "importance": 0.0047397874999380776
+        },
+        {
+          "feature": "vvetxp_per_min",
+          "importance": 0.004653553895153442
+        },
+        {
+          "feature": "cap_pressure_per_min",
+          "importance": 0.004626216220832394
+        },
+        {
+          "feature": "fuel_spend_ratio",
+          "importance": 0.004439235703165313
+        },
+        {
+          "feature": "vvetrank",
+          "importance": 0.004414667409747059
+        },
+        {
+          "feature": "upg",
+          "importance": 0.003537353695731966
+        },
+        {
+          "feature": "bprod",
+          "importance": 0.002255300669859798
+        },
+        {
+          "feature": "utypes",
+          "importance": 0.0022163355798609373
+        },
+        {
+          "feature": "blost",
+          "importance": 0.0020766328700039635
+        },
+        {
+          "feature": "svetrank",
+          "importance": 0.0018797172429375446
+        }
+      ]
+    },
+    "model_paths": {
+      "lr": "models/task1/lr_1v1_race4.joblib",
+      "rf": "models/task1/rf_1v1_race4.joblib"
+    }
+  },
+  {
+    "skipped": false,
+    "mode": "nvn",
+    "race_id": 0,
+    "metrics": {
+      "n_samples": 4093,
+      "pos_rate": 0.5169802101148302,
+      "lr_acc": 0.8827838827838828,
+      "lr_f1": 0.8859857482185273,
+      "lr_auc": 0.9504799770757217,
+      "rf_acc": 0.8937728937728938,
+      "rf_f1": 0.896797153024911,
+      "rf_auc": 0.9622734436564224,
+      "lr_confusion_matrix": [
+        [
+          350,
+          46
+        ],
+        [
+          50,
+          373
+        ]
+      ],
+      "rf_confusion_matrix": [
+        [
+          354,
+          42
+        ],
+        [
+          45,
+          378
+        ]
+      ],
+      "lr_report": {
+        "0": {
+          "precision": 0.875,
+          "recall": 0.8838383838383839,
+          "f1-score": 0.8793969849246231,
+          "support": 396.0
+        },
+        "1": {
+          "precision": 0.8902147971360382,
+          "recall": 0.8817966903073287,
+          "f1-score": 0.8859857482185273,
+          "support": 423.0
+        },
+        "accuracy": 0.8827838827838828,
+        "macro avg": {
+          "precision": 0.8826073985680192,
+          "recall": 0.8828175370728563,
+          "f1-score": 0.8826913665715752,
+          "support": 819.0
+        },
+        "weighted avg": {
+          "precision": 0.8828581919274042,
+          "recall": 0.8827838827838828,
+          "f1-score": 0.8827999725599363,
+          "support": 819.0
+        }
+      },
+      "rf_report": {
+        "0": {
+          "precision": 0.8872180451127819,
+          "recall": 0.8939393939393939,
+          "f1-score": 0.8905660377358491,
+          "support": 396.0
+        },
+        "1": {
+          "precision": 0.9,
+          "recall": 0.8936170212765957,
+          "f1-score": 0.896797153024911,
+          "support": 423.0
+        },
+        "accuracy": 0.8937728937728938,
+        "macro avg": {
+          "precision": 0.893609022556391,
+          "recall": 0.8937782076079948,
+          "f1-score": 0.8936815953803801,
+          "support": 819.0
+        },
+        "weighted avg": {
+          "precision": 0.8938197141204659,
+          "recall": 0.8937728937728938,
+          "f1-score": 0.893784306071958,
+          "support": 819.0
+        }
+      }
+    },
+    "logistic": {
+      "intercept": 0.16709714206515902,
+      "top5": [
+        {
+          "feature": "fuelearn_per_min",
+          "coef": 1.4126418822295177
+        },
+        {
+          "feature": "gt_min",
+          "coef": -0.9870228046141881
+        },
+        {
+          "feature": "sqkilled_per_min",
+          "coef": 0.971217556846487
+        },
+        {
+          "feature": "munearn_per_min",
+          "coef": 0.9147577083900718
+        },
+        {
+          "feature": "ekills_per_min",
+          "coef": 0.9103693131748016
+        }
+      ],
+      "coef_table": [
+        {
+          "feature": "fuelearn_per_min",
+          "coef": 1.4126418822295177
+        },
+        {
+          "feature": "gt_min",
+          "coef": -0.9870228046141881
+        },
+        {
+          "feature": "sqkilled_per_min",
+          "coef": 0.971217556846487
+        },
+        {
+          "feature": "munearn_per_min",
+          "coef": 0.9147577083900718
+        },
+        {
+          "feature": "ekills_per_min",
+          "coef": 0.9103693131748016
+        },
+        {
+          "feature": "sqlost_per_min",
+          "coef": -0.8855585910175781
+        },
+        {
+          "feature": "cabil",
+          "coef": 0.7585029509286927
+        },
+        {
+          "feature": "man_spend_ratio",
+          "coef": 0.7362910387874008
+        },
+        {
+          "feature": "edeaths_per_min",
+          "coef": -0.7091252090398203
+        },
+        {
+          "feature": "dmg_per_min",
+          "coef": 0.689634338389527
+        },
+        {
+          "feature": "vvetrank",
+          "coef": 0.645189673655618
+        },
+        {
+          "feature": "squad_loss_ratio",
+          "coef": -0.6282645485040781
+        },
+        {
+          "feature": "man_float_ratio",
+          "coef": 0.625613071675841
+        },
+        {
+          "feature": "dmg_per_fuel",
+          "coef": -0.4910904632598424
+        },
+        {
+          "feature": "svetrank",
+          "coef": 0.41469155022196774
+        },
+        {
+          "feature": "dmg_per_man",
+          "coef": -0.3769110231021437
+        },
+        {
+          "feature": "kills_per_man",
+          "coef": -0.36822193358551564
+        },
+        {
+          "feature": "squad_net_ratio",
+          "coef": -0.36281856255430256
+        },
+        {
+          "feature": "cap_eff",
+          "coef": 0.3440955404957554
+        },
+        {
+          "feature": "vvetxp_per_min",
+          "coef": -0.3317208566910096
+        },
+        {
+          "feature": "fuel_float_ratio",
+          "coef": 0.3217772806797093
+        },
+        {
+          "feature": "upg",
+          "coef": 0.31843611855308734
+        },
+        {
+          "feature": "svetxp_per_min",
+          "coef": -0.27603986946503145
+        },
+        {
+          "feature": "blost",
+          "coef": -0.2725751144295589
+        },
+        {
+          "feature": "vkill_per_min",
+          "coef": -0.259323188807884
+        },
+        {
+          "feature": "vloss_per_fuel",
+          "coef": 0.257029603350545
+        },
+        {
+          "feature": "pcap_per_min",
+          "coef": 0.2289706994615795
+        },
+        {
+          "feature": "abil",
+          "coef": -0.21538862619985305
+        },
+        {
+          "feature": "mun_spend_ratio",
+          "coef": -0.20750954464186558
+        },
+        {
+          "feature": "bprod",
+          "coef": 0.19981650448272148
+        },
+        {
+          "feature": "vlost_per_min",
+          "coef": -0.17003503346536464
+        },
+        {
+          "feature": "vkill_per_fuel",
+          "coef": 0.1634189961553338
+        },
+        {
+          "feature": "plost_per_min",
+          "coef": -0.1585058380121822
+        },
+        {
+          "feature": "fuel_spend_ratio",
+          "coef": -0.15747722717854118
+        },
+        {
+          "feature": "dmg_per_kill",
+          "coef": -0.14460943722879532
+        },
+        {
+          "feature": "utypes",
+          "coef": 0.14102710778463645
+        },
+        {
+          "feature": "trade_eff_kd",
+          "coef": 0.1273405574424037
+        },
+        {
+          "feature": "mun_float_ratio",
+          "coef": -0.10198627933816766
+        },
+        {
+          "feature": "manearn_per_min",
+          "coef": 0.0982222677466094
+        },
+        {
+          "feature": "cap_pressure_per_min",
+          "coef": 0.08200860955576973
+        },
+        {
+          "feature": "dmg_per_death",
+          "coef": 0.03520931703840949
+        },
+        {
+          "feature": "sqprod_per_min",
+          "coef": -0.005951070526691746
+        }
+      ]
+    },
+    "random_forest": {
+      "top5": [
+        {
+          "feature": "fuelearn_per_min",
+          "importance": 0.10893341624010314
+        },
+        {
+          "feature": "trade_eff_kd",
+          "importance": 0.09890976800218833
+        },
+        {
+          "feature": "munearn_per_min",
+          "importance": 0.077948944244551
+        },
+        {
+          "feature": "cap_eff",
+          "importance": 0.06184344596637967
+        },
+        {
+          "feature": "edeaths_per_min",
+          "importance": 0.04744053751410742
+        }
+      ],
+      "importance_table": [
+        {
+          "feature": "fuelearn_per_min",
+          "importance": 0.10893341624010314
+        },
+        {
+          "feature": "trade_eff_kd",
+          "importance": 0.09890976800218833
+        },
+        {
+          "feature": "munearn_per_min",
+          "importance": 0.077948944244551
+        },
+        {
+          "feature": "cap_eff",
+          "importance": 0.06184344596637967
+        },
+        {
+          "feature": "edeaths_per_min",
+          "importance": 0.04744053751410742
+        },
+        {
+          "feature": "cabil",
+          "importance": 0.04046950392771292
+        },
+        {
+          "feature": "dmg_per_death",
+          "importance": 0.040268031071549186
+        },
+        {
+          "feature": "sqlost_per_min",
+          "importance": 0.03905697486655514
+        },
+        {
+          "feature": "sqkilled_per_min",
+          "importance": 0.037786850637903144
+        },
+        {
+          "feature": "squad_net_ratio",
+          "importance": 0.03346023383478444
+        },
+        {
+          "feature": "squad_loss_ratio",
+          "importance": 0.02825290071941139
+        },
+        {
+          "feature": "vloss_per_fuel",
+          "importance": 0.022568320127483752
+        },
+        {
+          "feature": "man_spend_ratio",
+          "importance": 0.022474271630566915
+        },
+        {
+          "feature": "dmg_per_kill",
+          "importance": 0.01984408134243046
+        },
+        {
+          "feature": "ekills_per_min",
+          "importance": 0.0191796004564453
+        },
+        {
+          "feature": "kills_per_man",
+          "importance": 0.018261442600361468
+        },
+        {
+          "feature": "gt_min",
+          "importance": 0.01556689892426251
+        },
+        {
+          "feature": "sqprod_per_min",
+          "importance": 0.014969458340976734
+        },
+        {
+          "feature": "manearn_per_min",
+          "importance": 0.014946196245607658
+        },
+        {
+          "feature": "pcap_per_min",
+          "importance": 0.013733807411865738
+        },
+        {
+          "feature": "dmg_per_fuel",
+          "importance": 0.013413640916772426
+        },
+        {
+          "feature": "fuel_spend_ratio",
+          "importance": 0.013406354332714263
+        },
+        {
+          "feature": "vkill_per_min",
+          "importance": 0.013172023917214207
+        },
+        {
+          "feature": "vlost_per_min",
+          "importance": 0.013007109356742385
+        },
+        {
+          "feature": "man_float_ratio",
+          "importance": 0.012741431053810027
+        },
+        {
+          "feature": "mun_float_ratio",
+          "importance": 0.012401596404897502
+        },
+        {
+          "feature": "fuel_float_ratio",
+          "importance": 0.012176496461158808
+        },
+        {
+          "feature": "abil",
+          "importance": 0.011734677898136023
+        },
+        {
+          "feature": "cap_pressure_per_min",
+          "importance": 0.01161056901755088
+        },
+        {
+          "feature": "plost_per_min",
+          "importance": 0.011490599986802732
+        },
+        {
+          "feature": "vkill_per_fuel",
+          "importance": 0.010824353135522683
+        },
+        {
+          "feature": "dmg_per_min",
+          "importance": 0.010555135675136385
+        },
+        {
+          "feature": "mun_spend_ratio",
+          "importance": 0.010527881392162272
+        },
+        {
+          "feature": "vvetxp_per_min",
+          "importance": 0.009972404697780556
+        },
+        {
+          "feature": "dmg_per_man",
+          "importance": 0.009746044629656161
+        },
+        {
+          "feature": "bprod",
+          "importance": 0.009001233178080877
+        },
+        {
+          "feature": "upg",
+          "importance": 0.0075396932120786846
+        },
+        {
+          "feature": "svetxp_per_min",
+          "importance": 0.007279784068621835
+        },
+        {
+          "feature": "vvetrank",
+          "importance": 0.007029428889604599
+        },
+        {
+          "feature": "utypes",
+          "importance": 0.006411142297678008
+        },
+        {
+          "feature": "blost",
+          "importance": 0.006015984129346712
+        },
+        {
+          "feature": "svetrank",
+          "importance": 0.004027731243285699
+        }
+      ]
+    },
+    "model_paths": {
+      "lr": "models/task1/lr_nvn_race0.joblib",
+      "rf": "models/task1/rf_nvn_race0.joblib"
+    }
+  },
+  {
+    "skipped": false,
+    "mode": "nvn",
+    "race_id": 1,
+    "metrics": {
+      "n_samples": 3669,
+      "pos_rate": 0.46388661760697736,
+      "lr_acc": 0.8637602179836512,
+      "lr_f1": 0.8516320474777448,
+      "lr_auc": 0.939787996416841,
+      "rf_acc": 0.8719346049046321,
+      "rf_f1": 0.858433734939759,
+      "rf_auc": 0.9505337414153479,
+      "lr_confusion_matrix": [
+        [
+          347,
+          47
+        ],
+        [
+          53,
+          287
+        ]
+      ],
+      "rf_confusion_matrix": [
+        [
+          355,
+          39
+        ],
+        [
+          55,
+          285
+        ]
+      ],
+      "lr_report": {
+        "0": {
+          "precision": 0.8675,
+          "recall": 0.8807106598984772,
+          "f1-score": 0.8740554156171285,
+          "support": 394.0
+        },
+        "1": {
+          "precision": 0.8592814371257484,
+          "recall": 0.8441176470588235,
+          "f1-score": 0.8516320474777448,
+          "support": 340.0
+        },
+        "accuracy": 0.8637602179836512,
+        "macro avg": {
+          "precision": 0.8633907185628742,
+          "recall": 0.8624141534786504,
+          "f1-score": 0.8628437315474367,
+          "support": 734.0
+        },
+        "weighted avg": {
+          "precision": 0.8636930362707828,
+          "recall": 0.8637602179836512,
+          "f1-score": 0.8636685693400297,
+          "support": 734.0
+        }
+      },
+      "rf_report": {
+        "0": {
+          "precision": 0.8658536585365854,
+          "recall": 0.9010152284263959,
+          "f1-score": 0.8830845771144279,
+          "support": 394.0
+        },
+        "1": {
+          "precision": 0.8796296296296297,
+          "recall": 0.8382352941176471,
+          "f1-score": 0.858433734939759,
+          "support": 340.0
+        },
+        "accuracy": 0.8719346049046321,
+        "macro avg": {
+          "precision": 0.8727416440831075,
+          "recall": 0.8696252612720214,
+          "f1-score": 0.8707591560270935,
+          "support": 734.0
+        },
+        "weighted avg": {
+          "precision": 0.8722348985524369,
+          "recall": 0.8719346049046321,
+          "f1-score": 0.8716659308754805,
+          "support": 734.0
+        }
+      }
+    },
+    "logistic": {
+      "intercept": -0.08849396629173312,
+      "top5": [
+        {
+          "feature": "fuelearn_per_min",
+          "coef": 1.5233884882797082
+        },
+        {
+          "feature": "man_float_ratio",
+          "coef": 1.4444493209539486
+        },
+        {
+          "feature": "squad_loss_ratio",
+          "coef": -1.3606154074760153
+        },
+        {
+          "feature": "munearn_per_min",
+          "coef": 1.2511794449403302
+        },
+        {
+          "feature": "vvetrank",
+          "coef": 1.0891216652351527
+        }
+      ],
+      "coef_table": [
+        {
+          "feature": "fuelearn_per_min",
+          "coef": 1.5233884882797082
+        },
+        {
+          "feature": "man_float_ratio",
+          "coef": 1.4444493209539486
+        },
+        {
+          "feature": "squad_loss_ratio",
+          "coef": -1.3606154074760153
+        },
+        {
+          "feature": "munearn_per_min",
+          "coef": 1.2511794449403302
+        },
+        {
+          "feature": "vvetrank",
+          "coef": 1.0891216652351527
+        },
+        {
+          "feature": "dmg_per_min",
+          "coef": 1.0649341636147387
+        },
+        {
+          "feature": "dmg_per_man",
+          "coef": -0.9162429229978547
+        },
+        {
+          "feature": "vvetxp_per_min",
+          "coef": -0.9012663404265717
+        },
+        {
+          "feature": "gt_min",
+          "coef": -0.8751326934350357
+        },
+        {
+          "feature": "ekills_per_min",
+          "coef": 0.8489132178717547
+        },
+        {
+          "feature": "sqkilled_per_min",
+          "coef": 0.8187187764441932
+        },
+        {
+          "feature": "man_spend_ratio",
+          "coef": 0.7641429995289247
+        },
+        {
+          "feature": "squad_net_ratio",
+          "coef": -0.5799296611485039
+        },
+        {
+          "feature": "edeaths_per_min",
+          "coef": -0.5776699679753126
+        },
+        {
+          "feature": "fuel_float_ratio",
+          "coef": 0.5714689634045208
+        },
+        {
+          "feature": "cap_eff",
+          "coef": 0.5479409735193871
+        },
+        {
+          "feature": "dmg_per_death",
+          "coef": -0.41005822132005587
+        },
+        {
+          "feature": "sqprod_per_min",
+          "coef": -0.3783618840909421
+        },
+        {
+          "feature": "utypes",
+          "coef": 0.37808689369023557
+        },
+        {
+          "feature": "trade_eff_kd",
+          "coef": 0.3200704015905229
+        },
+        {
+          "feature": "cabil",
+          "coef": 0.31685063309245076
+        },
+        {
+          "feature": "sqlost_per_min",
+          "coef": -0.31284547781903693
+        },
+        {
+          "feature": "mun_float_ratio",
+          "coef": 0.28536312894885846
+        },
+        {
+          "feature": "vkill_per_min",
+          "coef": -0.2819974420469004
+        },
+        {
+          "feature": "mun_spend_ratio",
+          "coef": 0.28040694741838035
+        },
+        {
+          "feature": "blost",
+          "coef": -0.236039418091807
+        },
+        {
+          "feature": "svetxp_per_min",
+          "coef": -0.22279065995410446
+        },
+        {
+          "feature": "pcap_per_min",
+          "coef": 0.19090708912102874
+        },
+        {
+          "feature": "bprod",
+          "coef": 0.1834238547404344
+        },
+        {
+          "feature": "kills_per_man",
+          "coef": 0.1791812783896785
+        },
+        {
+          "feature": "vkill_per_fuel",
+          "coef": 0.16809665719401287
+        },
+        {
+          "feature": "svetrank",
+          "coef": 0.13540757856650734
+        },
+        {
+          "feature": "vloss_per_fuel",
+          "coef": 0.1346323910654318
+        },
+        {
+          "feature": "dmg_per_fuel",
+          "coef": -0.1255181827093165
+        },
+        {
+          "feature": "cap_pressure_per_min",
+          "coef": 0.11237993808971564
+        },
+        {
+          "feature": "abil",
+          "coef": 0.08332574504202225
+        },
+        {
+          "feature": "fuel_spend_ratio",
+          "coef": 0.053980462245740636
+        },
+        {
+          "feature": "upg",
+          "coef": 0.053419408717462515
+        },
+        {
+          "feature": "dmg_per_kill",
+          "coef": 0.050734073545046894
+        },
+        {
+          "feature": "plost_per_min",
+          "coef": -0.028643614557836167
+        },
+        {
+          "feature": "manearn_per_min",
+          "coef": -0.01788363999401837
+        },
+        {
+          "feature": "vlost_per_min",
+          "coef": 0.004043664435030189
+        }
+      ]
+    },
+    "random_forest": {
+      "top5": [
+        {
+          "feature": "fuelearn_per_min",
+          "importance": 0.10840082837028413
+        },
+        {
+          "feature": "trade_eff_kd",
+          "importance": 0.1009721156653722
+        },
+        {
+          "feature": "munearn_per_min",
+          "importance": 0.09500682210662878
+        },
+        {
+          "feature": "cap_eff",
+          "importance": 0.06695563475267478
+        },
+        {
+          "feature": "sqkilled_per_min",
+          "importance": 0.04941812179059391
+        }
+      ],
+      "importance_table": [
+        {
+          "feature": "fuelearn_per_min",
+          "importance": 0.10840082837028413
+        },
+        {
+          "feature": "trade_eff_kd",
+          "importance": 0.1009721156653722
+        },
+        {
+          "feature": "munearn_per_min",
+          "importance": 0.09500682210662878
+        },
+        {
+          "feature": "cap_eff",
+          "importance": 0.06695563475267478
+        },
+        {
+          "feature": "sqkilled_per_min",
+          "importance": 0.04941812179059391
+        },
+        {
+          "feature": "dmg_per_death",
+          "importance": 0.03912928555421621
+        },
+        {
+          "feature": "kills_per_man",
+          "importance": 0.03303215938582788
+        },
+        {
+          "feature": "ekills_per_min",
+          "importance": 0.03212565155318313
+        },
+        {
+          "feature": "edeaths_per_min",
+          "importance": 0.03005912209101201
+        },
+        {
+          "feature": "sqlost_per_min",
+          "importance": 0.0263368487776684
+        },
+        {
+          "feature": "squad_net_ratio",
+          "importance": 0.02240783342716457
+        },
+        {
+          "feature": "man_spend_ratio",
+          "importance": 0.02212882493869251
+        },
+        {
+          "feature": "dmg_per_kill",
+          "importance": 0.021611943052465932
+        },
+        {
+          "feature": "squad_loss_ratio",
+          "importance": 0.02072761861118719
+        },
+        {
+          "feature": "vkill_per_min",
+          "importance": 0.01852469189712547
+        },
+        {
+          "feature": "cabil",
+          "importance": 0.01814926437304103
+        },
+        {
+          "feature": "vloss_per_fuel",
+          "importance": 0.01730038478677991
+        },
+        {
+          "feature": "gt_min",
+          "importance": 0.01613730914667214
+        },
+        {
+          "feature": "manearn_per_min",
+          "importance": 0.01610981514035106
+        },
+        {
+          "feature": "fuel_spend_ratio",
+          "importance": 0.015602420138584407
+        },
+        {
+          "feature": "pcap_per_min",
+          "importance": 0.015423080839448246
+        },
+        {
+          "feature": "fuel_float_ratio",
+          "importance": 0.013885602377015393
+        },
+        {
+          "feature": "man_float_ratio",
+          "importance": 0.01354199799232078
+        },
+        {
+          "feature": "sqprod_per_min",
+          "importance": 0.013469234108270455
+        },
+        {
+          "feature": "vkill_per_fuel",
+          "importance": 0.013307866024231558
+        },
+        {
+          "feature": "abil",
+          "importance": 0.013044272348543858
+        },
+        {
+          "feature": "dmg_per_man",
+          "importance": 0.012567350529235303
+        },
+        {
+          "feature": "cap_pressure_per_min",
+          "importance": 0.01184239839930427
+        },
+        {
+          "feature": "dmg_per_min",
+          "importance": 0.011826921724661309
+        },
+        {
+          "feature": "mun_float_ratio",
+          "importance": 0.011780977886276921
+        },
+        {
+          "feature": "vlost_per_min",
+          "importance": 0.01157244303599667
+        },
+        {
+          "feature": "dmg_per_fuel",
+          "importance": 0.010977185888769376
+        },
+        {
+          "feature": "plost_per_min",
+          "importance": 0.010307860143465642
+        },
+        {
+          "feature": "vvetxp_per_min",
+          "importance": 0.009744235503513317
+        },
+        {
+          "feature": "mun_spend_ratio",
+          "importance": 0.009607313807529312
+        },
+        {
+          "feature": "svetxp_per_min",
+          "importance": 0.008569156784016646
+        },
+        {
+          "feature": "bprod",
+          "importance": 0.00832195502669555
+        },
+        {
+          "feature": "upg",
+          "importance": 0.007264845521544173
+        },
+        {
+          "feature": "vvetrank",
+          "importance": 0.006351998656765296
+        },
+        {
+          "feature": "utypes",
+          "importance": 0.0061665630973279
+        },
+        {
+          "feature": "svetrank",
+          "importance": 0.005573092504802346
+        },
+        {
+          "feature": "blost",
+          "importance": 0.004716952240740128
+        }
+      ]
+    },
+    "model_paths": {
+      "lr": "models/task1/lr_nvn_race1.joblib",
+      "rf": "models/task1/rf_nvn_race1.joblib"
+    }
+  },
+  {
+    "skipped": false,
+    "mode": "nvn",
+    "race_id": 2,
+    "metrics": {
+      "n_samples": 4898,
+      "pos_rate": 0.5357288689260923,
+      "lr_acc": 0.8816326530612245,
+      "lr_f1": 0.8875968992248062,
+      "lr_auc": 0.9463485086342229,
+      "rf_acc": 0.8959183673469387,
+      "rf_f1": 0.9035916824196597,
+      "rf_auc": 0.9588969126111984,
+      "lr_confusion_matrix": [
+        [
+          406,
+          49
+        ],
+        [
+          67,
+          458
+        ]
+      ],
+      "rf_confusion_matrix": [
+        [
+          400,
+          55
+        ],
+        [
+          47,
+          478
+        ]
+      ],
+      "lr_report": {
+        "0": {
+          "precision": 0.8583509513742071,
+          "recall": 0.8923076923076924,
+          "f1-score": 0.875,
+          "support": 455.0
+        },
+        "1": {
+          "precision": 0.903353057199211,
+          "recall": 0.8723809523809524,
+          "f1-score": 0.8875968992248062,
+          "support": 525.0
+        },
+        "accuracy": 0.8816326530612245,
+        "macro avg": {
+          "precision": 0.8808520042867091,
+          "recall": 0.8823443223443224,
+          "f1-score": 0.8812984496124031,
+          "support": 980.0
+        },
+        "weighted avg": {
+          "precision": 0.8824592223518878,
+          "recall": 0.8816326530612245,
+          "f1-score": 0.8817483388704319,
+          "support": 980.0
+        }
+      },
+      "rf_report": {
+        "0": {
+          "precision": 0.8948545861297539,
+          "recall": 0.8791208791208791,
+          "f1-score": 0.8869179600886918,
+          "support": 455.0
+        },
+        "1": {
+          "precision": 0.8968105065666041,
+          "recall": 0.9104761904761904,
+          "f1-score": 0.9035916824196597,
+          "support": 525.0
+        },
+        "accuracy": 0.8959183673469387,
+        "macro avg": {
+          "precision": 0.895832546348179,
+          "recall": 0.8947985347985348,
+          "f1-score": 0.8952548212541758,
+          "support": 980.0
+        },
+        "weighted avg": {
+          "precision": 0.8959024006494951,
+          "recall": 0.8959183673469387,
+          "f1-score": 0.8958503113374247,
+          "support": 980.0
+        }
+      }
+    },
+    "logistic": {
+      "intercept": 0.24076976380868778,
+      "top5": [
+        {
+          "feature": "squad_loss_ratio",
+          "coef": -2.5035599643751274
+        },
+        {
+          "feature": "squad_net_ratio",
+          "coef": -1.659132947189081
+        },
+        {
+          "feature": "fuelearn_per_min",
+          "coef": 1.4325529453108339
+        },
+        {
+          "feature": "man_float_ratio",
+          "coef": 1.1855000680673373
+        },
+        {
+          "feature": "munearn_per_min",
+          "coef": 1.078796296432694
+        }
+      ],
+      "coef_table": [
+        {
+          "feature": "squad_loss_ratio",
+          "coef": -2.5035599643751274
+        },
+        {
+          "feature": "squad_net_ratio",
+          "coef": -1.659132947189081
+        },
+        {
+          "feature": "fuelearn_per_min",
+          "coef": 1.4325529453108339
+        },
+        {
+          "feature": "man_float_ratio",
+          "coef": 1.1855000680673373
+        },
+        {
+          "feature": "munearn_per_min",
+          "coef": 1.078796296432694
+        },
+        {
+          "feature": "edeaths_per_min",
+          "coef": -1.0563220065932946
+        },
+        {
+          "feature": "ekills_per_min",
+          "coef": 1.0216102416264223
+        },
+        {
+          "feature": "kills_per_man",
+          "coef": -0.8947800971000271
+        },
+        {
+          "feature": "dmg_per_min",
+          "coef": 0.815083663098834
+        },
+        {
+          "feature": "sqkilled_per_min",
+          "coef": 0.7541004508213255
+        },
+        {
+          "feature": "vvetrank",
+          "coef": 0.7351637510034442
+        },
+        {
+          "feature": "man_spend_ratio",
+          "coef": 0.654107064564543
+        },
+        {
+          "feature": "dmg_per_death",
+          "coef": -0.6468369379986572
+        },
+        {
+          "feature": "trade_eff_kd",
+          "coef": 0.6372018305485861
+        },
+        {
+          "feature": "sqlost_per_min",
+          "coef": -0.6149513198229319
+        },
+        {
+          "feature": "pcap_per_min",
+          "coef": 0.5018792799736121
+        },
+        {
+          "feature": "cabil",
+          "coef": 0.460592921473567
+        },
+        {
+          "feature": "plost_per_min",
+          "coef": -0.3846663271598383
+        },
+        {
+          "feature": "dmg_per_man",
+          "coef": -0.3601356676922817
+        },
+        {
+          "feature": "fuel_spend_ratio",
+          "coef": -0.3425962135148642
+        },
+        {
+          "feature": "blost",
+          "coef": -0.30201973629909334
+        },
+        {
+          "feature": "svetrank",
+          "coef": 0.27417328589687573
+        },
+        {
+          "feature": "bprod",
+          "coef": 0.26139679870806265
+        },
+        {
+          "feature": "gt_min",
+          "coef": -0.24955013239150345
+        },
+        {
+          "feature": "fuel_float_ratio",
+          "coef": -0.2366047084066101
+        },
+        {
+          "feature": "vvetxp_per_min",
+          "coef": -0.21294008105697879
+        },
+        {
+          "feature": "svetxp_per_min",
+          "coef": -0.201260237214828
+        },
+        {
+          "feature": "utypes",
+          "coef": 0.1984582982822199
+        },
+        {
+          "feature": "vkill_per_min",
+          "coef": -0.1813931707412446
+        },
+        {
+          "feature": "cap_eff",
+          "coef": 0.18116236368085345
+        },
+        {
+          "feature": "cap_pressure_per_min",
+          "coef": 0.17848181453928905
+        },
+        {
+          "feature": "vlost_per_min",
+          "coef": 0.1033920297760144
+        },
+        {
+          "feature": "mun_float_ratio",
+          "coef": -0.10100646041531734
+        },
+        {
+          "feature": "sqprod_per_min",
+          "coef": -0.09648925787534612
+        },
+        {
+          "feature": "manearn_per_min",
+          "coef": 0.07869435885457415
+        },
+        {
+          "feature": "mun_spend_ratio",
+          "coef": 0.06679995421921148
+        },
+        {
+          "feature": "dmg_per_kill",
+          "coef": -0.05046353302387636
+        },
+        {
+          "feature": "vloss_per_fuel",
+          "coef": 0.04004870482575769
+        },
+        {
+          "feature": "abil",
+          "coef": -0.037336465569461415
+        },
+        {
+          "feature": "upg",
+          "coef": 0.02075121201281829
+        },
+        {
+          "feature": "vkill_per_fuel",
+          "coef": -0.004202771975546935
+        },
+        {
+          "feature": "dmg_per_fuel",
+          "coef": 0.0002505011695587237
+        }
+      ]
+    },
+    "random_forest": {
+      "top5": [
+        {
+          "feature": "fuelearn_per_min",
+          "importance": 0.11256641077567782
+        },
+        {
+          "feature": "trade_eff_kd",
+          "importance": 0.10685628151992288
+        },
+        {
+          "feature": "munearn_per_min",
+          "importance": 0.08091779781669742
+        },
+        {
+          "feature": "cap_eff",
+          "importance": 0.053611747404106694
+        },
+        {
+          "feature": "sqlost_per_min",
+          "importance": 0.051621679932790605
+        }
+      ],
+      "importance_table": [
+        {
+          "feature": "fuelearn_per_min",
+          "importance": 0.11256641077567782
+        },
+        {
+          "feature": "trade_eff_kd",
+          "importance": 0.10685628151992288
+        },
+        {
+          "feature": "munearn_per_min",
+          "importance": 0.08091779781669742
+        },
+        {
+          "feature": "cap_eff",
+          "importance": 0.053611747404106694
+        },
+        {
+          "feature": "sqlost_per_min",
+          "importance": 0.051621679932790605
+        },
+        {
+          "feature": "edeaths_per_min",
+          "importance": 0.04143131954925757
+        },
+        {
+          "feature": "dmg_per_death",
+          "importance": 0.04071716640063188
+        },
+        {
+          "feature": "vloss_per_fuel",
+          "importance": 0.03432620731804443
+        },
+        {
+          "feature": "squad_net_ratio",
+          "importance": 0.03288974503381707
+        },
+        {
+          "feature": "squad_loss_ratio",
+          "importance": 0.03012609135168702
+        },
+        {
+          "feature": "cabil",
+          "importance": 0.029354283920179497
+        },
+        {
+          "feature": "sqkilled_per_min",
+          "importance": 0.028374380258551966
+        },
+        {
+          "feature": "dmg_per_kill",
+          "importance": 0.019400589968282627
+        },
+        {
+          "feature": "kills_per_man",
+          "importance": 0.018986953705631547
+        },
+        {
+          "feature": "ekills_per_min",
+          "importance": 0.018860729763621704
+        },
+        {
+          "feature": "man_spend_ratio",
+          "importance": 0.017240044783074848
+        },
+        {
+          "feature": "gt_min",
+          "importance": 0.01665075054217495
+        },
+        {
+          "feature": "sqprod_per_min",
+          "importance": 0.01644594028802984
+        },
+        {
+          "feature": "manearn_per_min",
+          "importance": 0.016151244667716978
+        },
+        {
+          "feature": "vlost_per_min",
+          "importance": 0.01546479921549238
+        },
+        {
+          "feature": "pcap_per_min",
+          "importance": 0.014321404400313065
+        },
+        {
+          "feature": "man_float_ratio",
+          "importance": 0.013759284285273477
+        },
+        {
+          "feature": "dmg_per_fuel",
+          "importance": 0.012781188406572797
+        },
+        {
+          "feature": "vkill_per_min",
+          "importance": 0.01214640566200357
+        },
+        {
+          "feature": "mun_float_ratio",
+          "importance": 0.011897187654580083
+        },
+        {
+          "feature": "fuel_float_ratio",
+          "importance": 0.011856431188740989
+        },
+        {
+          "feature": "cap_pressure_per_min",
+          "importance": 0.011710765432087704
+        },
+        {
+          "feature": "dmg_per_min",
+          "importance": 0.01127728631544942
+        },
+        {
+          "feature": "fuel_spend_ratio",
+          "importance": 0.011276872781305161
+        },
+        {
+          "feature": "dmg_per_man",
+          "importance": 0.011013524876585884
+        },
+        {
+          "feature": "plost_per_min",
+          "importance": 0.01074346323218114
+        },
+        {
+          "feature": "abil",
+          "importance": 0.010345818265799004
+        },
+        {
+          "feature": "mun_spend_ratio",
+          "importance": 0.009256406428843992
+        },
+        {
+          "feature": "vkill_per_fuel",
+          "importance": 0.008922586384387804
+        },
+        {
+          "feature": "svetxp_per_min",
+          "importance": 0.008826277887054278
+        },
+        {
+          "feature": "vvetxp_per_min",
+          "importance": 0.008784854741376835
+        },
+        {
+          "feature": "utypes",
+          "importance": 0.0078389994979883
+        },
+        {
+          "feature": "upg",
+          "importance": 0.007838513337254346
+        },
+        {
+          "feature": "vvetrank",
+          "importance": 0.006961436718266174
+        },
+        {
+          "feature": "svetrank",
+          "importance": 0.005683743711580631
+        },
+        {
+          "feature": "blost",
+          "importance": 0.005483957921986977
+        },
+        {
+          "feature": "bprod",
+          "importance": 0.0052794266549785465
+        }
+      ]
+    },
+    "model_paths": {
+      "lr": "models/task1/lr_nvn_race2.joblib",
+      "rf": "models/task1/rf_nvn_race2.joblib"
+    }
+  },
+  {
+    "skipped": false,
+    "mode": "nvn",
+    "race_id": 3,
+    "metrics": {
+      "n_samples": 2318,
+      "pos_rate": 0.499137187230371,
+      "lr_acc": 0.8943965517241379,
+      "lr_f1": 0.8968421052631579,
+      "lr_auc": 0.9535523186682521,
+      "rf_acc": 0.8771551724137931,
+      "rf_f1": 0.8805031446540881,
+      "rf_auc": 0.9556982015457788,
+      "lr_confusion_matrix": [
+        [
+          202,
+          30
+        ],
+        [
+          19,
+          213
+        ]
+      ],
+      "rf_confusion_matrix": [
+        [
+          197,
+          35
+        ],
+        [
+          22,
+          210
+        ]
+      ],
+      "lr_report": {
+        "0": {
+          "precision": 0.9140271493212669,
+          "recall": 0.8706896551724138,
+          "f1-score": 0.891832229580574,
+          "support": 232.0
+        },
+        "1": {
+          "precision": 0.8765432098765432,
+          "recall": 0.9181034482758621,
+          "f1-score": 0.8968421052631579,
+          "support": 232.0
+        },
+        "accuracy": 0.8943965517241379,
+        "macro avg": {
+          "precision": 0.8952851795989051,
+          "recall": 0.8943965517241379,
+          "f1-score": 0.8943371674218659,
+          "support": 464.0
+        },
+        "weighted avg": {
+          "precision": 0.8952851795989051,
+          "recall": 0.8943965517241379,
+          "f1-score": 0.894337167421866,
+          "support": 464.0
+        }
+      },
+      "rf_report": {
+        "0": {
+          "precision": 0.8995433789954338,
+          "recall": 0.8491379310344828,
+          "f1-score": 0.8736141906873615,
+          "support": 232.0
+        },
+        "1": {
+          "precision": 0.8571428571428571,
+          "recall": 0.9051724137931034,
+          "f1-score": 0.8805031446540881,
+          "support": 232.0
+        },
+        "accuracy": 0.8771551724137931,
+        "macro avg": {
+          "precision": 0.8783431180691454,
+          "recall": 0.8771551724137931,
+          "f1-score": 0.8770586676707248,
+          "support": 464.0
+        },
+        "weighted avg": {
+          "precision": 0.8783431180691453,
+          "recall": 0.8771551724137931,
+          "f1-score": 0.8770586676707248,
+          "support": 464.0
+        }
+      }
+    },
+    "logistic": {
+      "intercept": 0.08013804753095505,
+      "top5": [
+        {
+          "feature": "fuelearn_per_min",
+          "coef": 1.950635620961314
+        },
+        {
+          "feature": "munearn_per_min",
+          "coef": 1.296394813966426
+        },
+        {
+          "feature": "squad_loss_ratio",
+          "coef": -1.0330590206611596
+        },
+        {
+          "feature": "man_float_ratio",
+          "coef": 1.0275066046351597
+        },
+        {
+          "feature": "sqkilled_per_min",
+          "coef": 0.8864053252541387
+        }
+      ],
+      "coef_table": [
+        {
+          "feature": "fuelearn_per_min",
+          "coef": 1.950635620961314
+        },
+        {
+          "feature": "munearn_per_min",
+          "coef": 1.296394813966426
+        },
+        {
+          "feature": "squad_loss_ratio",
+          "coef": -1.0330590206611596
+        },
+        {
+          "feature": "man_float_ratio",
+          "coef": 1.0275066046351597
+        },
+        {
+          "feature": "sqkilled_per_min",
+          "coef": 0.8864053252541387
+        },
+        {
+          "feature": "edeaths_per_min",
+          "coef": -0.857506219038542
+        },
+        {
+          "feature": "man_spend_ratio",
+          "coef": 0.850160115820861
+        },
+        {
+          "feature": "dmg_per_fuel",
+          "coef": -0.6957538755602326
+        },
+        {
+          "feature": "manearn_per_min",
+          "coef": 0.5955226456577838
+        },
+        {
+          "feature": "svetxp_per_min",
+          "coef": -0.5773191386001335
+        },
+        {
+          "feature": "gt_min",
+          "coef": -0.5426993349829525
+        },
+        {
+          "feature": "svetrank",
+          "coef": 0.5216167414393906
+        },
+        {
+          "feature": "fuel_float_ratio",
+          "coef": 0.5213599853468522
+        },
+        {
+          "feature": "cabil",
+          "coef": 0.48570201652240036
+        },
+        {
+          "feature": "squad_net_ratio",
+          "coef": -0.46094375839175195
+        },
+        {
+          "feature": "kills_per_man",
+          "coef": 0.4490896015511486
+        },
+        {
+          "feature": "vvetrank",
+          "coef": 0.40142395770922623
+        },
+        {
+          "feature": "ekills_per_min",
+          "coef": 0.38121341122681573
+        },
+        {
+          "feature": "dmg_per_death",
+          "coef": 0.3728597679487152
+        },
+        {
+          "feature": "fuel_spend_ratio",
+          "coef": -0.36357326752469327
+        },
+        {
+          "feature": "utypes",
+          "coef": 0.33445240395295645
+        },
+        {
+          "feature": "pcap_per_min",
+          "coef": 0.30160084856960784
+        },
+        {
+          "feature": "vkill_per_min",
+          "coef": -0.26569817989505556
+        },
+        {
+          "feature": "upg",
+          "coef": -0.25160664799582094
+        },
+        {
+          "feature": "vlost_per_min",
+          "coef": -0.2107231283145913
+        },
+        {
+          "feature": "trade_eff_kd",
+          "coef": -0.2090337840744455
+        },
+        {
+          "feature": "cap_eff",
+          "coef": 0.20577308309907794
+        },
+        {
+          "feature": "cap_pressure_per_min",
+          "coef": 0.20048455700134116
+        },
+        {
+          "feature": "mun_spend_ratio",
+          "coef": 0.18828635578690395
+        },
+        {
+          "feature": "dmg_per_man",
+          "coef": 0.17824758755826042
+        },
+        {
+          "feature": "sqlost_per_min",
+          "coef": -0.1519559724276025
+        },
+        {
+          "feature": "vkill_per_fuel",
+          "coef": -0.14599924363635286
+        },
+        {
+          "feature": "mun_float_ratio",
+          "coef": 0.13494599669993843
+        },
+        {
+          "feature": "abil",
+          "coef": 0.12478176526642039
+        },
+        {
+          "feature": "blost",
+          "coef": 0.09730498164002221
+        },
+        {
+          "feature": "bprod",
+          "coef": -0.08135362774691086
+        },
+        {
+          "feature": "vvetxp_per_min",
+          "coef": -0.04305137633710505
+        },
+        {
+          "feature": "dmg_per_min",
+          "coef": 0.032876751901028275
+        },
+        {
+          "feature": "sqprod_per_min",
+          "coef": -0.02997481787331258
+        },
+        {
+          "feature": "plost_per_min",
+          "coef": -0.013980070352939779
+        },
+        {
+          "feature": "dmg_per_kill",
+          "coef": 0.00887785139549529
+        },
+        {
+          "feature": "vloss_per_fuel",
+          "coef": -0.0021149458068199572
+        }
+      ]
+    },
+    "random_forest": {
+      "top5": [
+        {
+          "feature": "trade_eff_kd",
+          "importance": 0.11920182715317759
+        },
+        {
+          "feature": "fuelearn_per_min",
+          "importance": 0.09790171267971565
+        },
+        {
+          "feature": "munearn_per_min",
+          "importance": 0.07933082198726255
+        },
+        {
+          "feature": "cap_eff",
+          "importance": 0.054072135979944494
+        },
+        {
+          "feature": "dmg_per_death",
+          "importance": 0.04733930924598694
+        }
+      ],
+      "importance_table": [
+        {
+          "feature": "trade_eff_kd",
+          "importance": 0.11920182715317759
+        },
+        {
+          "feature": "fuelearn_per_min",
+          "importance": 0.09790171267971565
+        },
+        {
+          "feature": "munearn_per_min",
+          "importance": 0.07933082198726255
+        },
+        {
+          "feature": "cap_eff",
+          "importance": 0.054072135979944494
+        },
+        {
+          "feature": "dmg_per_death",
+          "importance": 0.04733930924598694
+        },
+        {
+          "feature": "edeaths_per_min",
+          "importance": 0.0439596397590333
+        },
+        {
+          "feature": "kills_per_man",
+          "importance": 0.034449565829462625
+        },
+        {
+          "feature": "sqlost_per_min",
+          "importance": 0.033997334191249055
+        },
+        {
+          "feature": "ekills_per_min",
+          "importance": 0.03207915618516049
+        },
+        {
+          "feature": "sqkilled_per_min",
+          "importance": 0.0317144229292965
+        },
+        {
+          "feature": "dmg_per_kill",
+          "importance": 0.025090874762828338
+        },
+        {
+          "feature": "squad_net_ratio",
+          "importance": 0.024808428704806533
+        },
+        {
+          "feature": "man_spend_ratio",
+          "importance": 0.023574114300151616
+        },
+        {
+          "feature": "squad_loss_ratio",
+          "importance": 0.022673887077930183
+        },
+        {
+          "feature": "cabil",
+          "importance": 0.02258169770703173
+        },
+        {
+          "feature": "vloss_per_fuel",
+          "importance": 0.021448809266890967
+        },
+        {
+          "feature": "sqprod_per_min",
+          "importance": 0.01682024746053065
+        },
+        {
+          "feature": "manearn_per_min",
+          "importance": 0.016157656479127355
+        },
+        {
+          "feature": "gt_min",
+          "importance": 0.015541793160744648
+        },
+        {
+          "feature": "pcap_per_min",
+          "importance": 0.015116129845334477
+        },
+        {
+          "feature": "cap_pressure_per_min",
+          "importance": 0.01433674268361541
+        },
+        {
+          "feature": "dmg_per_fuel",
+          "importance": 0.014310998313820066
+        },
+        {
+          "feature": "mun_float_ratio",
+          "importance": 0.014235114631235075
+        },
+        {
+          "feature": "man_float_ratio",
+          "importance": 0.012844829870320172
+        },
+        {
+          "feature": "dmg_per_man",
+          "importance": 0.012801761064086335
+        },
+        {
+          "feature": "fuel_float_ratio",
+          "importance": 0.012680359270072706
+        },
+        {
+          "feature": "dmg_per_min",
+          "importance": 0.011976290193926377
+        },
+        {
+          "feature": "fuel_spend_ratio",
+          "importance": 0.011840285533705686
+        },
+        {
+          "feature": "abil",
+          "importance": 0.011729650255841318
+        },
+        {
+          "feature": "vlost_per_min",
+          "importance": 0.01138027833863534
+        },
+        {
+          "feature": "vkill_per_min",
+          "importance": 0.010906063134504691
+        },
+        {
+          "feature": "mun_spend_ratio",
+          "importance": 0.010189311175739773
+        },
+        {
+          "feature": "vvetxp_per_min",
+          "importance": 0.009091949385019532
+        },
+        {
+          "feature": "plost_per_min",
+          "importance": 0.008984333024968639
+        },
+        {
+          "feature": "bprod",
+          "importance": 0.008671516024367984
+        },
+        {
+          "feature": "vkill_per_fuel",
+          "importance": 0.008265493424614103
+        },
+        {
+          "feature": "upg",
+          "importance": 0.007463950372498755
+        },
+        {
+          "feature": "vvetrank",
+          "importance": 0.007314343418855019
+        },
+        {
+          "feature": "utypes",
+          "importance": 0.007069712260494213
+        },
+        {
+          "feature": "svetxp_per_min",
+          "importance": 0.007008527565843502
+        },
+        {
+          "feature": "svetrank",
+          "importance": 0.004827744666759131
+        },
+        {
+          "feature": "blost",
+          "importance": 0.004211180685410413
+        }
+      ]
+    },
+    "model_paths": {
+      "lr": "models/task1/lr_nvn_race3.joblib",
+      "rf": "models/task1/rf_nvn_race3.joblib"
+    }
+  },
+  {
+    "skipped": false,
+    "mode": "nvn",
+    "race_id": 4,
+    "metrics": {
+      "n_samples": 2998,
+      "pos_rate": 0.48632421614409604,
+      "lr_acc": 0.865,
+      "lr_f1": 0.8615384615384616,
+      "lr_auc": 0.9409580145881515,
+      "rf_acc": 0.8733333333333333,
+      "rf_f1": 0.8671328671328671,
+      "rf_auc": 0.9430317114392457,
+      "lr_confusion_matrix": [
+        [
+          267,
+          41
+        ],
+        [
+          40,
+          252
+        ]
+      ],
+      "rf_confusion_matrix": [
+        [
+          276,
+          32
+        ],
+        [
+          44,
+          248
+        ]
+      ],
+      "lr_report": {
+        "0": {
+          "precision": 0.8697068403908795,
+          "recall": 0.8668831168831169,
+          "f1-score": 0.8682926829268293,
+          "support": 308.0
+        },
+        "1": {
+          "precision": 0.8600682593856656,
+          "recall": 0.863013698630137,
+          "f1-score": 0.8615384615384616,
+          "support": 292.0
+        },
+        "accuracy": 0.865,
+        "macro avg": {
+          "precision": 0.8648875498882725,
+          "recall": 0.864948407756627,
+          "f1-score": 0.8649155722326454,
+          "support": 600.0
+        },
+        "weighted avg": {
+          "precision": 0.8650160643016753,
+          "recall": 0.865,
+          "f1-score": 0.8650056285178236,
+          "support": 600.0
+        }
+      },
+      "rf_report": {
+        "0": {
+          "precision": 0.8625,
+          "recall": 0.8961038961038961,
+          "f1-score": 0.8789808917197452,
+          "support": 308.0
+        },
+        "1": {
+          "precision": 0.8857142857142857,
+          "recall": 0.8493150684931506,
+          "f1-score": 0.8671328671328671,
+          "support": 292.0
+        },
+        "accuracy": 0.8733333333333333,
+        "macro avg": {
+          "precision": 0.8741071428571429,
+          "recall": 0.8727094822985233,
+          "f1-score": 0.8730568794263062,
+          "support": 600.0
+        },
+        "weighted avg": {
+          "precision": 0.8737976190476191,
+          "recall": 0.8733333333333333,
+          "f1-score": 0.8732148530874646,
+          "support": 600.0
+        }
+      }
+    },
+    "logistic": {
+      "intercept": -0.07985714948400975,
+      "top5": [
+        {
+          "feature": "fuelearn_per_min",
+          "coef": 1.9803167366843788
+        },
+        {
+          "feature": "squad_loss_ratio",
+          "coef": -1.5275383705707875
+        },
+        {
+          "feature": "man_float_ratio",
+          "coef": 1.5255823947660774
+        },
+        {
+          "feature": "munearn_per_min",
+          "coef": 1.1539242988589429
+        },
+        {
+          "feature": "sqlost_per_min",
+          "coef": -0.9403887285576963
+        }
+      ],
+      "coef_table": [
+        {
+          "feature": "fuelearn_per_min",
+          "coef": 1.9803167366843788
+        },
+        {
+          "feature": "squad_loss_ratio",
+          "coef": -1.5275383705707875
+        },
+        {
+          "feature": "man_float_ratio",
+          "coef": 1.5255823947660774
+        },
+        {
+          "feature": "munearn_per_min",
+          "coef": 1.1539242988589429
+        },
+        {
+          "feature": "sqlost_per_min",
+          "coef": -0.9403887285576963
+        },
+        {
+          "feature": "dmg_per_man",
+          "coef": 0.8861632124316876
+        },
+        {
+          "feature": "man_spend_ratio",
+          "coef": 0.8523486395623263
+        },
+        {
+          "feature": "vvetrank",
+          "coef": 0.6720879280427189
+        },
+        {
+          "feature": "edeaths_per_min",
+          "coef": -0.6451082214251401
+        },
+        {
+          "feature": "squad_net_ratio",
+          "coef": -0.6135992339446049
+        },
+        {
+          "feature": "fuel_float_ratio",
+          "coef": 0.6017369156052242
+        },
+        {
+          "feature": "trade_eff_kd",
+          "coef": 0.582719466430669
+        },
+        {
+          "feature": "manearn_per_min",
+          "coef": 0.5571618967245459
+        },
+        {
+          "feature": "dmg_per_death",
+          "coef": -0.5406459015098177
+        },
+        {
+          "feature": "sqkilled_per_min",
+          "coef": 0.5179268460453181
+        },
+        {
+          "feature": "cap_eff",
+          "coef": 0.4944574191064496
+        },
+        {
+          "feature": "utypes",
+          "coef": 0.48785325248889183
+        },
+        {
+          "feature": "ekills_per_min",
+          "coef": 0.4865359164361382
+        },
+        {
+          "feature": "mun_float_ratio",
+          "coef": 0.456596483578874
+        },
+        {
+          "feature": "gt_min",
+          "coef": -0.4205595722696087
+        },
+        {
+          "feature": "cabil",
+          "coef": 0.3683624606297096
+        },
+        {
+          "feature": "fuel_spend_ratio",
+          "coef": 0.36555016339060875
+        },
+        {
+          "feature": "mun_spend_ratio",
+          "coef": 0.34029648753058067
+        },
+        {
+          "feature": "dmg_per_min",
+          "coef": -0.3345547862494384
+        },
+        {
+          "feature": "svetrank",
+          "coef": -0.32800079783966046
+        },
+        {
+          "feature": "vvetxp_per_min",
+          "coef": -0.3163962839955309
+        },
+        {
+          "feature": "vkill_per_fuel",
+          "coef": 0.2735905378465687
+        },
+        {
+          "feature": "bprod",
+          "coef": 0.23794748289624607
+        },
+        {
+          "feature": "blost",
+          "coef": -0.23227698373098915
+        },
+        {
+          "feature": "vlost_per_min",
+          "coef": 0.16991482472630237
+        },
+        {
+          "feature": "kills_per_man",
+          "coef": 0.16862395992980825
+        },
+        {
+          "feature": "dmg_per_kill",
+          "coef": 0.15732642700761562
+        },
+        {
+          "feature": "pcap_per_min",
+          "coef": 0.129628609381882
+        },
+        {
+          "feature": "vloss_per_fuel",
+          "coef": 0.10636392303087844
+        },
+        {
+          "feature": "vkill_per_min",
+          "coef": -0.08686239454163557
+        },
+        {
+          "feature": "upg",
+          "coef": 0.08667822444310012
+        },
+        {
+          "feature": "cap_pressure_per_min",
+          "coef": 0.08619207176531367
+        },
+        {
+          "feature": "sqprod_per_min",
+          "coef": -0.07702881731677588
+        },
+        {
+          "feature": "svetxp_per_min",
+          "coef": -0.07254780672192424
+        },
+        {
+          "feature": "dmg_per_fuel",
+          "coef": 0.05453046519804673
+        },
+        {
+          "feature": "plost_per_min",
+          "coef": -0.010249763828599254
+        },
+        {
+          "feature": "abil",
+          "coef": 0.004975329341653524
+        }
+      ]
+    },
+    "random_forest": {
+      "top5": [
+        {
+          "feature": "fuelearn_per_min",
+          "importance": 0.1092079045028897
+        },
+        {
+          "feature": "trade_eff_kd",
+          "importance": 0.10737584636634705
+        },
+        {
+          "feature": "munearn_per_min",
+          "importance": 0.08207970102657713
+        },
+        {
+          "feature": "cap_eff",
+          "importance": 0.06111124024865698
+        },
+        {
+          "feature": "sqlost_per_min",
+          "importance": 0.05146812551065227
+        }
+      ],
+      "importance_table": [
+        {
+          "feature": "fuelearn_per_min",
+          "importance": 0.1092079045028897
+        },
+        {
+          "feature": "trade_eff_kd",
+          "importance": 0.10737584636634705
+        },
+        {
+          "feature": "munearn_per_min",
+          "importance": 0.08207970102657713
+        },
+        {
+          "feature": "cap_eff",
+          "importance": 0.06111124024865698
+        },
+        {
+          "feature": "sqlost_per_min",
+          "importance": 0.05146812551065227
+        },
+        {
+          "feature": "dmg_per_death",
+          "importance": 0.04553830654810643
+        },
+        {
+          "feature": "edeaths_per_min",
+          "importance": 0.03781424358770375
+        },
+        {
+          "feature": "sqkilled_per_min",
+          "importance": 0.03298290046674615
+        },
+        {
+          "feature": "squad_net_ratio",
+          "importance": 0.030615030087669637
+        },
+        {
+          "feature": "squad_loss_ratio",
+          "importance": 0.02902598790515998
+        },
+        {
+          "feature": "man_spend_ratio",
+          "importance": 0.028564812715503006
+        },
+        {
+          "feature": "kills_per_man",
+          "importance": 0.02386916464506377
+        },
+        {
+          "feature": "ekills_per_min",
+          "importance": 0.023477099431353135
+        },
+        {
+          "feature": "vloss_per_fuel",
+          "importance": 0.01934285050207658
+        },
+        {
+          "feature": "dmg_per_kill",
+          "importance": 0.019089872172505833
+        },
+        {
+          "feature": "gt_min",
+          "importance": 0.01702616275259298
+        },
+        {
+          "feature": "pcap_per_min",
+          "importance": 0.01675017082797181
+        },
+        {
+          "feature": "vkill_per_min",
+          "importance": 0.015952017003402524
+        },
+        {
+          "feature": "manearn_per_min",
+          "importance": 0.015299551061554766
+        },
+        {
+          "feature": "sqprod_per_min",
+          "importance": 0.015024893415865907
+        },
+        {
+          "feature": "dmg_per_fuel",
+          "importance": 0.014163920466422932
+        },
+        {
+          "feature": "cap_pressure_per_min",
+          "importance": 0.014157815329464536
+        },
+        {
+          "feature": "fuel_float_ratio",
+          "importance": 0.014077903948431322
+        },
+        {
+          "feature": "man_float_ratio",
+          "importance": 0.01323059433384163
+        },
+        {
+          "feature": "cabil",
+          "importance": 0.01223631559828382
+        },
+        {
+          "feature": "mun_float_ratio",
+          "importance": 0.01222218476762243
+        },
+        {
+          "feature": "vlost_per_min",
+          "importance": 0.011816497344957141
+        },
+        {
+          "feature": "fuel_spend_ratio",
+          "importance": 0.010778767890747196
+        },
+        {
+          "feature": "dmg_per_min",
+          "importance": 0.010634097885393578
+        },
+        {
+          "feature": "abil",
+          "importance": 0.010418377773231534
+        },
+        {
+          "feature": "dmg_per_man",
+          "importance": 0.010298711842772056
+        },
+        {
+          "feature": "plost_per_min",
+          "importance": 0.010110982416472312
+        },
+        {
+          "feature": "mun_spend_ratio",
+          "importance": 0.009139310528067945
+        },
+        {
+          "feature": "vkill_per_fuel",
+          "importance": 0.009113999853471213
+        },
+        {
+          "feature": "vvetxp_per_min",
+          "importance": 0.008875551609612448
+        },
+        {
+          "feature": "bprod",
+          "importance": 0.008484880781655152
+        },
+        {
+          "feature": "svetxp_per_min",
+          "importance": 0.007554852902820931
+        },
+        {
+          "feature": "upg",
+          "importance": 0.007466375775652786
+        },
+        {
+          "feature": "utypes",
+          "importance": 0.006390165090011118
+        },
+        {
+          "feature": "blost",
+          "importance": 0.006317309702112961
+        },
+        {
+          "feature": "vvetrank",
+          "importance": 0.006134295893922011
+        },
+        {
+          "feature": "svetrank",
+          "importance": 0.004761207486633508
+        }
+      ]
+    },
+    "model_paths": {
+      "lr": "models/task1/lr_nvn_race4.joblib",
+      "rf": "models/task1/rf_nvn_race4.joblib"
+    }
+  }
+]

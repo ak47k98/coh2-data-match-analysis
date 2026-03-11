@@ -1,0 +1,37 @@
+[
+  {
+    "skipped": false,
+    "race_id": 0,
+    "best_auc": 0.9684324234107262,
+    "pt_path": "models/task2_calib/calib_race0.pt",
+    "meta_path": "models/task2_calib/calib_race0.json"
+  },
+  {
+    "skipped": false,
+    "race_id": 1,
+    "best_auc": 0.9611598756412932,
+    "pt_path": "models/task2_calib/calib_race1.pt",
+    "meta_path": "models/task2_calib/calib_race1.json"
+  },
+  {
+    "skipped": false,
+    "race_id": 2,
+    "best_auc": 0.9614923693993347,
+    "pt_path": "models/task2_calib/calib_race2.pt",
+    "meta_path": "models/task2_calib/calib_race2.json"
+  },
+  {
+    "skipped": false,
+    "race_id": 3,
+    "best_auc": 0.9520362243899712,
+    "pt_path": "models/task2_calib/calib_race3.pt",
+    "meta_path": "models/task2_calib/calib_race3.json"
+  },
+  {
+    "skipped": false,
+    "race_id": 4,
+    "best_auc": 0.968639759286159,
+    "pt_path": "models/task2_calib/calib_race4.pt",
+    "meta_path": "models/task2_calib/calib_race4.json"
+  }
+]

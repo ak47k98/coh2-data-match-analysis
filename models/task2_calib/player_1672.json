@@ -1,0 +1,65 @@
+{
+  "ok": true,
+  "player_jsonl": "data/players/1672.jsonl",
+  "target_profile_id": 1672,
+  "mode_preference": {
+    "1v1": 418
+  },
+  "race_preference": {
+    "2": 157,
+    "0": 130,
+    "4": 108,
+    "1": 17,
+    "3": 6
+  },
+  "per_race": {
+    "0": {
+      "status": "ok",
+      "games": 130,
+      "games_1v1": 130,
+      "games_2v2": 0,
+      "games_team": 0,
+      "used": "1v1+2v2",
+      "skill_score": 0.740277046268826,
+      "pred_tier": null,
+      "current_tier": null
+    },
+    "1": {
+      "status": "ok",
+      "games": 17,
+      "games_1v1": 17,
+      "games_2v2": 0,
+      "games_team": 0,
+      "used": "1v1+2v2",
+      "skill_score": 0.7417461251675644,
+      "pred_tier": null,
+      "current_tier": null
+    },
+    "2": {
+      "status": "ok",
+      "games": 157,
+      "games_1v1": 157,
+      "games_2v2": 0,
+      "games_team": 0,
+      "used": "1v1+2v2",
+      "skill_score": 0.761854508706327,
+      "pred_tier": null,
+      "current_tier": null
+    },
+    "3": {
+      "status": "insufficient_games",
+      "games": 6
+    },
+    "4": {
+      "status": "ok",
+      "games": 108,
+      "games_1v1": 108,
+      "games_2v2": 0,
+      "games_team": 0,
+      "used": "1v1+2v2",
+      "skill_score": 0.7627405268798847,
+      "pred_tier": null,
+      "current_tier": null
+    }
+  }
+}

@@ -1,0 +1,6 @@
+﻿race_id,race_name,pred_tier,skill_score,source,scale_mode
+0,东德,15.0,0.740277046268826,recomputed,diff
+1,苏联,15.0,0.7417461251675644,recomputed,diff
+2,西德,16.0,0.761854508706327,recomputed,diff
+3,美国,,,recomputed,diff
+4,英国,16.0,0.7627405268798847,recomputed,diff

@@ -1,0 +1,16 @@
+{
+  "w_1v1": 0.7,
+  "w_2v2": 0.3,
+  "bins_loaded": false,
+  "used_skill": {
+    "东德": 0.740277046268826,
+    "苏联": 0.7417461251675644,
+    "西德": 0.761854508706327,
+    "英国": 0.7627405268798847
+  },
+  "target_profile_id": 1672,
+  "scale_mode": "diff",
+  "annotate_values": true,
+  "decimals": 2,
+  "use_log_for_raw": false
+}

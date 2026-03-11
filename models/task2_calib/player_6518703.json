@@ -1,0 +1,53 @@
+{
+  "ok": true,
+  "player_jsonl": "data/players/6518703.jsonl",
+  "target_profile_id": 6518703,
+  "mode_preference": {
+    "2v2": 40,
+    "1v1": 6,
+    "team": 4
+  },
+  "race_preference": {
+    "1": 21,
+    "3": 10,
+    "2": 8,
+    "0": 7,
+    "4": 4
+  },
+  "per_race": {
+    "0": {
+      "status": "insufficient_games",
+      "games": 7
+    },
+    "1": {
+      "status": "ok",
+      "games": 21,
+      "games_1v1": 0,
+      "games_2v2": 17,
+      "games_team": 4,
+      "used": "1v1+2v2",
+      "skill_score": 0.46807873292196106,
+      "pred_tier": null,
+      "current_tier": null
+    },
+    "2": {
+      "status": "insufficient_games",
+      "games": 8
+    },
+    "3": {
+      "status": "ok",
+      "games": 10,
+      "games_1v1": 1,
+      "games_2v2": 9,
+      "games_team": 0,
+      "used": "1v1+2v2",
+      "skill_score": 0.6780864856826762,
+      "pred_tier": null,
+      "current_tier": null
+    },
+    "4": {
+      "status": "insufficient_games",
+      "games": 4
+    }
+  }
+}
